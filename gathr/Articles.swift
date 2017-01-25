@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Articles {
+public class Articles {
     var title:String = String()
     var excerpt:String = String()
     var featuredImage:String = String()

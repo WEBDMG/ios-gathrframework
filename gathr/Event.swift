@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Event{
+public class Event{
     var eventid:String = String()
     var venuename:String = String()
     var address:String = String()

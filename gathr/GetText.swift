@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class GetText: NSObject {
-    var text:[Text] = [Text]()
+public class GetText: NSObject {
+    public var text:[Text] = [Text]()
     
     //Create a singleton
     class var sharedInstance: GetText {
@@ -26,7 +26,7 @@ class GetText: NSObject {
         
         return Static.instance!
     }
-    func getAllTexts(completion: ([Text]?) -> Void) {
+    public func getAllTexts(completion: ([Text]?) -> Void) {
         var config: NSDictionary?
         
         if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {

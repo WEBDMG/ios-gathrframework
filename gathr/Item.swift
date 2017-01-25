@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Item{
+public class Item{
     var id:String = String()
     var name:String = String()
     var desc:String = String()

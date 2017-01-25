@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class GetAudio : NSObject{
+public class GetAudio : NSObject{
     var audio:[Audio] = [Audio]()
     
     //Create a singleton
@@ -26,7 +26,7 @@ class GetAudio : NSObject{
         
         return Static.instance!
     }
-    func getAllSongs(completion: ([Audio]?) -> Void) {
+    public func getAllSongs(completion: ([Audio]?) -> Void) {
         var config: NSDictionary?
         
         if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {

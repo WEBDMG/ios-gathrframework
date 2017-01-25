@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "gathr"
+  s.name         = "Gathr"
   s.version      = "1.0.0"
   s.summary      = "A short description of gathr."
 
@@ -132,5 +132,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "Alamofire", "~> 3.4"
+  s.dependency "SwiftyJSON", "~> 2.3"
 
 end

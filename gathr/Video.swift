@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Video{
+public class Video{
     var sidvid:String = String()
     var title:String = String()
     var video:String = String()

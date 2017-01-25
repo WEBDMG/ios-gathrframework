@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class GetEvent : NSObject{
-    var event:[Event] = [Event]()
+public class GetEvent : NSObject{
+    public var event:[Event] = [Event]()
     
     //Create a singleton
     class var sharedInstance: GetEvent {
@@ -26,7 +26,7 @@ class GetEvent : NSObject{
         
         return Static.instance!
     }
-    func getAllEvents(completion: ([Event]?) -> Void) {
+    public func getAllEvents(completion: ([Event]?) -> Void) {
         var config: NSDictionary?
         
         if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {

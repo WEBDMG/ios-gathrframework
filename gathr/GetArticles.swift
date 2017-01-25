@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class GetArticles : NSObject{
-     var articles:[Articles] = [Articles]()
+public class GetArticles : NSObject{
+    public var articles:[Articles] = [Articles]()
     
     //Create a singleton
     class var sharedInstance: GetArticles {
@@ -26,7 +26,7 @@ class GetArticles : NSObject{
         
         return Static.instance!
     }
-    func getAllArticles(blogURL:String, completion: ([Articles]?) -> Void) {
+    public func getAllArticles(blogURL:String, completion: ([Articles]?) -> Void) {
         Alamofire.request(
             .GET,
             blogURL + "/wp-json/posts?filter[posts_per_page]=13&filter[order]=DESC",

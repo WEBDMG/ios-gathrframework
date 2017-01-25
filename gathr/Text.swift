@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class Text {
+public class Text {
     var textid:String = String()
     var title:String = String()
     var text:String = String()

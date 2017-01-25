@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Photo {
+public class Photo {
     var title:String = String()
     var url:String = String()
     var source:String = String()

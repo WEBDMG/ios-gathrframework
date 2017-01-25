@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class GetPhotos : NSObject{
-    var photos:[Photo] = [Photo]()
+public class GetPhotos : NSObject{
+    public var photos:[Photo] = [Photo]()
     
     //Create a singleton
     class var sharedInstance: GetPhotos {
@@ -26,7 +26,7 @@ class GetPhotos : NSObject{
         
         return Static.instance!
     }
-    func getAllPhotos(completion: ([Photo]?) -> Void) {
+    public func getAllPhotos(completion: ([Photo]?) -> Void) {
         var config: NSDictionary?
         
         if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {

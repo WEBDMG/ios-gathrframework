@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class GetConfig : NSObject{
+public class GetConfig : NSObject{
         /// Create a singleton
     class var sharedInstance: GetConfig {
         struct Static {
@@ -30,7 +30,7 @@ class GetConfig : NSObject{
      
      - parameter completion: NSDictionary of result
      */
-    func getConfigApi(completion: (NSDictionary) -> Void){
+    public func getConfigApi(completion: (NSDictionary) -> Void){
         var config: NSDictionary?
        
         if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {

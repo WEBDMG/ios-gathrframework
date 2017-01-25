@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Config:NSObject{
+public class Config:NSObject{
     var blogurl = ""
     var playmeappappleid = ""
     var playmeappfacebookurl = ""

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Audio {
+public class Audio {
     var sidid:String = String()
     var title:String = String()
     var songs:NSURL = NSURL()

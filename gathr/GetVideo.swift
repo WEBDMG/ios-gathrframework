@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class GetVideo: NSObject{
-    var video:[Video] = [Video]()
+public class GetVideo: NSObject{
+    public var video:[Video] = [Video]()
     
     //Create a singleton
     class var sharedInstance: GetVideo {
@@ -26,7 +26,7 @@ class GetVideo: NSObject{
         
         return Static.instance!
     }
-    func getAllVideos(completion: ([Video]?) -> Void) {
+    public func getAllVideos(completion: ([Video]?) -> Void) {
         var config: NSDictionary?
         
         if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {
