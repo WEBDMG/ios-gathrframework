@@ -11,7 +11,7 @@ import Alamofire
 
 public class GetConfig : NSObject{
         /// Create a singleton
-    class var sharedInstance: GetConfig {
+   public class var sharedInstance: GetConfig {
         struct Static {
             static var instance: GetConfig?
             static var token: dispatch_once_t = 0
@@ -37,7 +37,13 @@ public class GetConfig : NSObject{
             config = NSDictionary(contentsOfFile: path)
         }
         if let dict = config {
-            Alamofire.request(.GET, "\(dict.valueForKey("BASE_URL")!)"+"config/token/"+"\(dict.valueForKey("PLAYMEAPPTOKEN")!)")
+            let token = "\(dict.valueForKey("TOKEN")!)"
+            let header = ["X-API-KEY":token]
+            Alamofire.request(
+                .GET,
+                "\(dict.valueForKey("BASE_URL")!)"+"config/config/token/"+"\(dict.valueForKey("PLAYMEAPPTOKEN")!)",
+                headers:header,
+                encoding: .URLEncodedInURL)
                 .validate()
                 .responseJSON { response in
                     switch response.result {
@@ -49,6 +55,6 @@ public class GetConfig : NSObject{
                 }
             }
         }
-    
-    
 }
+
+

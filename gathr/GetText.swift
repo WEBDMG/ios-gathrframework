@@ -14,7 +14,7 @@ public class GetText: NSObject {
     public var text:[Text] = [Text]()
     
     //Create a singleton
-    class var sharedInstance: GetText {
+    public class var sharedInstance: GetText {
         struct Static {
             static var instance: GetText?
             static var token: dispatch_once_t = 0
@@ -26,6 +26,10 @@ public class GetText: NSObject {
         
         return Static.instance!
     }
+    
+    /// Get all texts.
+    ///
+    /// - Parameter completion: Array of Text objects.
     public func getAllTexts(completion: ([Text]?) -> Void) {
         var config: NSDictionary?
         

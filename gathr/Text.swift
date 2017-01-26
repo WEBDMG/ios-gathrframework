@@ -10,16 +10,17 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+/// Text object
 public class Text {
-    var textid:String = String()
-    var title:String = String()
-    var text:String = String()
-    var author:String = String()
-    var type:String = String()
-    var date:String = String()
+    public var textid:String = String()
+    public var title:String = String()
+    public var text:String = String()
+    public var author:String = String()
+    public var type:String = String()
+    public var date:String = String()
     
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["textid"] != nil {
             self.textid = String(data["textid"] as! String)
         }
@@ -40,7 +41,7 @@ public class Text {
         }
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.valueForKey("textid") != nil {
             self.textid = dictionary.valueForKey("textid") as! String
         }

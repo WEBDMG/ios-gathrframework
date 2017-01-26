@@ -14,7 +14,7 @@ public class GetArticles : NSObject{
     public var articles:[Articles] = [Articles]()
     
     //Create a singleton
-    class var sharedInstance: GetArticles {
+    public class var sharedInstance: GetArticles {
         struct Static {
             static var instance: GetArticles?
             static var token: dispatch_once_t = 0
@@ -26,6 +26,13 @@ public class GetArticles : NSObject{
         
         return Static.instance!
     }
+    
+    
+    /// Pulls blog posts from WordPress based Blogs.
+    ///
+    /// - Parameters:
+    ///   - blogURL: String Base Url to blog.
+    ///   - completion: Array of Dictionaries
     public func getAllArticles(blogURL:String, completion: ([Articles]?) -> Void) {
         Alamofire.request(
             .GET,

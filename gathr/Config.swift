@@ -8,24 +8,25 @@
 
 import UIKit
 
+/// Config object.
 public class Config:NSObject{
-    var blogurl = ""
-    var playmeappappleid = ""
-    var playmeappfacebookurl = ""
-    var playmeapphomeurl = ""
-    var playmeappid = ""
-    var playmeappinstagramurl = ""
-    var playmeappkeywords = ""
-    var playmeapplandingpageactive = ""
-    var playmeappname = ""
-    var playmeappnameformatted = ""
-    var playmeappstoreurl = ""
-    var playmeapptoken = ""
-    var playmeapptwitterurl = ""
-    var playmetoken = ""
-    var playmeapplayout = ""
+    public var blogurl = ""
+    public var playmeappappleid = ""
+    public var playmeappfacebookurl = ""
+    public var playmeapphomeurl = ""
+    public var playmeappid = ""
+    public var playmeappinstagramurl = ""
+    public var playmeappkeywords = ""
+    public var playmeapplandingpageactive = ""
+    public var playmeappname = ""
+    public var playmeappnameformatted = ""
+    public var playmeappstoreurl = ""
+    public var playmeapptoken = ""
+    public var playmeapptwitterurl = ""
+    public var playmetoken = ""
+    public var playmeapplayout = ""
     
-    init?(response:NSDictionary) {
+    public init?(response:NSDictionary) {
         self.blogurl = (response.valueForKey("config")?.valueForKey("blogurl")?.objectAtIndex(0))! as! String
         self.playmeappappleid = (response.valueForKey("config")?.valueForKey("playmeappappleid")?.objectAtIndex(0))! as! String
         self.playmeappfacebookurl = (response.valueForKey("config")?.valueForKey("playmeappfacebookurl")?.objectAtIndex(0))! as! String

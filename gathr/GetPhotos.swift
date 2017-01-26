@@ -14,7 +14,7 @@ public class GetPhotos : NSObject{
     public var photos:[Photo] = [Photo]()
     
     //Create a singleton
-    class var sharedInstance: GetPhotos {
+    public class var sharedInstance: GetPhotos {
         struct Static {
             static var instance: GetPhotos?
             static var token: dispatch_once_t = 0
@@ -26,6 +26,10 @@ public class GetPhotos : NSObject{
         
         return Static.instance!
     }
+    
+    /// Get all photos.
+    ///
+    /// - Parameter completion: Array of dictionaries.
     public func getAllPhotos(completion: ([Photo]?) -> Void) {
         var config: NSDictionary?
         

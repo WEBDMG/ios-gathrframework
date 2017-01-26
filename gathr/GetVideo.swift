@@ -14,7 +14,7 @@ public class GetVideo: NSObject{
     public var video:[Video] = [Video]()
     
     //Create a singleton
-    class var sharedInstance: GetVideo {
+    public class var sharedInstance: GetVideo {
         struct Static {
             static var instance: GetVideo?
             static var token: dispatch_once_t = 0
@@ -26,6 +26,10 @@ public class GetVideo: NSObject{
         
         return Static.instance!
     }
+    
+    /// Get video urls and metadata.
+    ///
+    /// - Parameter completion: Array of dictionaries.
     public func getAllVideos(completion: ([Video]?) -> Void) {
         var config: NSDictionary?
         

@@ -11,10 +11,10 @@ import Alamofire
 import SwiftyJSON
 
 public class GetAudio : NSObject{
-    var audio:[Audio] = [Audio]()
+    public var audio:[Audio] = [Audio]()
     
     //Create a singleton
-    class var sharedInstance: GetAudio {
+    public class var sharedInstance: GetAudio {
         struct Static {
             static var instance: GetAudio?
             static var token: dispatch_once_t = 0
@@ -26,6 +26,10 @@ public class GetAudio : NSObject{
         
         return Static.instance!
     }
+    
+    /// Get audio urls and meta data.
+    ///
+    /// - Parameter completion: Array of dictionaries.
     public func getAllSongs(completion: ([Audio]?) -> Void) {
         var config: NSDictionary?
         

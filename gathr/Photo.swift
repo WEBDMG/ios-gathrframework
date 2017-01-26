@@ -8,12 +8,13 @@
 
 import Foundation
 
+/// Photo object.
 public class Photo {
-    var title:String = String()
-    var url:String = String()
-    var source:String = String()
+    public var title:String = String()
+    public var url:String = String()
+    public var source:String = String()
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
         }
@@ -26,7 +27,7 @@ public class Photo {
         
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.valueForKey("title") != nil {
             self.title = dictionary.valueForKey("title") as! String
         }

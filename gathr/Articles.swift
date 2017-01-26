@@ -9,13 +9,14 @@
 import Foundation
 
 
+/// Articles object.
 public class Articles {
-    var title:String = String()
-    var excerpt:String = String()
-    var featuredImage:String = String()
-    var link:String = String()
+    public var title:String = String()
+    public var excerpt:String = String()
+    public var featuredImage:String = String()
+    public var link:String = String()
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
         }
@@ -31,7 +32,7 @@ public class Articles {
         
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.valueForKey("title") != nil {
             self.title = dictionary.valueForKey("title") as! String
         }

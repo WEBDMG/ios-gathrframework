@@ -8,18 +8,19 @@
 
 import Foundation
 
+/// Event object.
 public class Event{
-    var eventid:String = String()
-    var venuename:String = String()
-    var address:String = String()
-    var date:String = String()
-    var time:String = String()
-    var notes:String = String()
-    var ticketlink:String = String()
-    var marketinglink:String = String()
-    var image:String = String()
+    public var eventid:String = String()
+    public var venuename:String = String()
+    public var address:String = String()
+    public var date:String = String()
+    public var time:String = String()
+    public var notes:String = String()
+    public var ticketlink:String = String()
+    public var marketinglink:String = String()
+    public var image:String = String()
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["eventid"] != nil {
             self.eventid = String(data["eventid"] as! String)
         }
@@ -49,7 +50,7 @@ public class Event{
         }
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.valueForKey("eventid") != nil {
             self.eventid = dictionary.valueForKey("eventid") as! String
         }

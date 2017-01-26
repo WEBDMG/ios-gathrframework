@@ -8,16 +8,17 @@
 
 import Foundation
 
+/// Video object.
 public class Video{
-    var sidvid:String = String()
-    var title:String = String()
-    var video:String = String()
-    var videoM:String = String()
-    var image:String = String()
-    var type:String = String()
+    public var sidvid:String = String()
+    public var title:String = String()
+    public var video:String = String()
+    public var videoM:String = String()
+    public var image:String = String()
+    public var type:String = String()
 
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["sidvid"] != nil {
             self.sidvid = String(data["sidvid"] as! String)
         }
@@ -39,7 +40,7 @@ public class Video{
         
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.valueForKey("sidvid") != nil {
             self.sidvid = dictionary.valueForKey("sidvid") as! String
         }

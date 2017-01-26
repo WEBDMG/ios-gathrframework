@@ -8,17 +8,18 @@
 
 import Foundation
 
+/// Item object.
 public class Item{
-    var id:String = String()
-    var name:String = String()
-    var desc:String = String()
-    var price:String = String()
-    var image:String = String()
-    var status:String = String()
-    var inventory:String = String()
+    public var id:String = String()
+    public var name:String = String()
+    public var desc:String = String()
+    public var price:String = String()
+    public var image:String = String()
+    public var status:String = String()
+    public var inventory:String = String()
 
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["id"] != nil {
             self.id = String(data["id"] as! String)
         }
@@ -42,7 +43,7 @@ public class Item{
         }
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.valueForKey("id") != nil {
             self.id = dictionary.valueForKey("id") as! String
         }

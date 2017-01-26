@@ -14,7 +14,7 @@ public class GetItem:NSObject{
    public var item:[Item] = [Item]()
     
     //Create a singleton
-    class var sharedInstance: GetItem {
+    public class var sharedInstance: GetItem {
         struct Static {
             static var instance: GetItem?
             static var token: dispatch_once_t = 0
@@ -26,6 +26,10 @@ public class GetItem:NSObject{
         
         return Static.instance!
     }
+    
+    /// Get all items.
+    ///
+    /// - Parameter completion: Array of item objects.
     public func getAllItems(completion: ([Item]?) -> Void) {
         var config: NSDictionary?
         

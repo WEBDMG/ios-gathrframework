@@ -14,7 +14,7 @@ public class GetEvent : NSObject{
     public var event:[Event] = [Event]()
     
     //Create a singleton
-    class var sharedInstance: GetEvent {
+    public class var sharedInstance: GetEvent {
         struct Static {
             static var instance: GetEvent?
             static var token: dispatch_once_t = 0
@@ -26,6 +26,11 @@ public class GetEvent : NSObject{
         
         return Static.instance!
     }
+    
+    
+    /// Get all Events.
+    ///
+    /// - Parameter completion: Array of event objects.
     public func getAllEvents(completion: ([Event]?) -> Void) {
         var config: NSDictionary?
         

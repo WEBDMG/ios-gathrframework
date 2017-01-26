@@ -8,20 +8,21 @@
 
 import Foundation
 
+/// Audio Object.
 public class Audio {
-    var sidid:String = String()
-    var title:String = String()
-    var songs:NSURL = NSURL()
-    var video:String = String()
-    var image:NSURL = NSURL()
-    var aboutTrack:String = String()
-    var writtenBy:String = String()
-    var source:String = String()
-    var artistName:String = String()
-    var facebook:String = String()
-    var twitter:String = String()
+    public var sidid:String = String()
+    public var title:String = String()
+    public var songs:NSURL = NSURL()
+    public var video:String = String()
+    public var image:NSURL = NSURL()
+    public var aboutTrack:String = String()
+    public var writtenBy:String = String()
+    public var source:String = String()
+    public var artistName:String = String()
+    public var facebook:String = String()
+    public var twitter:String = String()
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["sidid"] != nil {
             self.sidid = String(data["sidid"] as! String)
         }
@@ -58,7 +59,7 @@ public class Audio {
         
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.valueForKey("sidid") != nil {
             self.sidid = dictionary.valueForKey("sidid") as! String
         }
