@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "Gathr"
   s.version      = "1.0.0"
-  s.summary      = "A short description of gathr."
+  s.summary      = "Gathr Framework for interacting with Gathr."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "A long description of gathr."
+  s.description  = "Gathr Framework for interacting with Gathr."
 
   s.homepage     = "https://webdmg.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
