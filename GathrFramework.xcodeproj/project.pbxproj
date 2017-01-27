@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C203610F1E38638F000FF773 /* gathr.h in Headers */ = {isa = PBXBuildFile; fileRef = C203610D1E38638F000FF773 /* gathr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C21BEE7D1E3AF58400060888 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C21BEE7C1E3AF58400060888 /* LICENSE */; };
 		C222BF9C1E3880EF00897FB7 /* GetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360E41E3862D3000FF773 /* GetConfig.swift */; };
 		C222BF9D1E3880EF00897FB7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360E51E3862D3000FF773 /* Config.swift */; };
 		C222BF9E1E3880EF00897FB7 /* GetArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360E61E3862D3000FF773 /* GetArticles.swift */; };
@@ -46,6 +47,7 @@
 		C203610B1E38638F000FF773 /* gathr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = gathr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C203610D1E38638F000FF773 /* gathr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gathr.h; sourceTree = "<group>"; };
 		C203610E1E38638F000FF773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C21BEE7C1E3AF58400060888 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,7 @@
 		C20360C61E3862A3000FF773 = {
 			isa = PBXGroup;
 			children = (
-				C203610C1E38638F000FF773 /* gathr */,
+				C203610C1E38638F000FF773 /* Gathr */,
 				C20360D01E3862A3000FF773 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +77,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C203610C1E38638F000FF773 /* gathr */ = {
+		C203610C1E38638F000FF773 /* Gathr */ = {
 			isa = PBXGroup;
 			children = (
 				C203610D1E38638F000FF773 /* gathr.h */,
@@ -96,9 +98,11 @@
 				C20360F21E3862D3000FF773 /* GetText.swift */,
 				C20360F31E3862D3000FF773 /* Text.swift */,
 				C203610E1E38638F000FF773 /* Info.plist */,
+				C21BEE7C1E3AF58400060888 /* LICENSE */,
 			);
+			name = Gathr;
 			path = gathr;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -148,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C20360CA1E3862A3000FF773 /* Build configuration list for PBXProject "gathrFramework" */;
+			buildConfigurationList = C20360CA1E3862A3000FF773 /* Build configuration list for PBXProject "GathrFramework" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -171,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C21BEE7D1E3AF58400060888 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C20360CA1E3862A3000FF773 /* Build configuration list for PBXProject "gathrFramework" */ = {
+		C20360CA1E3862A3000FF773 /* Build configuration list for PBXProject "GathrFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C20360DF1E3862A4000FF773 /* Debug */,

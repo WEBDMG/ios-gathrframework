@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C20360CE1E3862A3000FF773"
-               BuildableName = "gathrFramework.app"
-               BlueprintName = "gathrFramework"
-               ReferencedContainer = "container:gathrFramework.xcodeproj">
+               BlueprintIdentifier = "C203610A1E38638F000FF773"
+               BuildableName = "gathr.framework"
+               BlueprintName = "gathr"
+               ReferencedContainer = "container:GathrFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C20360CE1E3862A3000FF773"
-            BuildableName = "gathrFramework.app"
-            BlueprintName = "gathrFramework"
-            ReferencedContainer = "container:gathrFramework.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C20360CE1E3862A3000FF773"
-            BuildableName = "gathrFramework.app"
-            BlueprintName = "gathrFramework"
-            ReferencedContainer = "container:gathrFramework.xcodeproj">
+            BlueprintIdentifier = "C203610A1E38638F000FF773"
+            BuildableName = "gathr.framework"
+            BlueprintName = "gathr"
+            ReferencedContainer = "container:GathrFramework.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C20360CE1E3862A3000FF773"
-            BuildableName = "gathrFramework.app"
-            BlueprintName = "gathrFramework"
-            ReferencedContainer = "container:gathrFramework.xcodeproj">
+            BlueprintIdentifier = "C203610A1E38638F000FF773"
+            BuildableName = "gathr.framework"
+            BlueprintName = "gathr"
+            ReferencedContainer = "container:GathrFramework.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
