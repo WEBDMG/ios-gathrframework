@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 public class GetItem:NSObject{
-   public var item:[Item] = [Item]()
+    public var item:[Item] = [Item]()
     
     //Create a singleton
     public class var sharedInstance: GetItem {
@@ -37,11 +37,14 @@ public class GetItem:NSObject{
             config = NSDictionary(contentsOfFile: path)
         }
         if let dict = config {
+            let token = "\(dict.valueForKey("TOKEN")!)"
+            let header = ["X-API-KEY":token]
             Alamofire.request(
                 .GET,
                 "\(dict.valueForKey("BASE_URL")!)"+"items/token/"+"\(dict.valueForKey("PLAYMEAPPTOKEN")!)",
                 parameters: nil,
-                encoding: .URL)
+                encoding: .URL,
+                headers:header)
                 .validate()
                 .responseJSON { (response) -> Void in
                     self.item = [Item]()

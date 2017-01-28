@@ -38,11 +38,14 @@ public class GetEvent : NSObject{
             config = NSDictionary(contentsOfFile: path)
         }
         if let dict = config {
+            let token = "\(dict.valueForKey("TOKEN")!)"
+            let header = ["X-API-KEY":token]
             Alamofire.request(
                 .GET,
                 "\(dict.valueForKey("BASE_URL")!)"+"events/token/"+"\(dict.valueForKey("PLAYMEAPPTOKEN")!)",
                 parameters: nil,
-                encoding: .URL)
+                encoding: .URL,
+                headers:header)
                 .validate()
                 .responseJSON { (response) -> Void in
                     self.event = [Event]()

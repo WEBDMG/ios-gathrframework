@@ -10,8 +10,8 @@ import UIKit
 import Alamofire
 
 public class GetConfig : NSObject{
-        /// Create a singleton
-   public class var sharedInstance: GetConfig {
+    /// Create a singleton
+    public class var sharedInstance: GetConfig {
         struct Static {
             static var instance: GetConfig?
             static var token: dispatch_once_t = 0
@@ -32,7 +32,7 @@ public class GetConfig : NSObject{
      */
     public func getConfigApi(completion: (NSDictionary) -> Void){
         var config: NSDictionary?
-       
+        
         if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {
             config = NSDictionary(contentsOfFile: path)
         }
@@ -52,9 +52,9 @@ public class GetConfig : NSObject{
                     case .Failure(let error):
                         print(error)
                     }
-                }
             }
         }
+    }
 }
 
 

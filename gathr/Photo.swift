@@ -37,7 +37,7 @@ public class Photo {
         if dictionary.valueForKey("source") != nil{
             self.source = dictionary.valueForKey("source") as! String
         }
-
+        
     }
     
     func toDictionary() -> NSDictionary {
@@ -45,7 +45,7 @@ public class Photo {
             "title":self.title,
             "excerpt":self.url,
             "source":self.source,
-        ]
+            ]
         return photosDictionary
     }
 }

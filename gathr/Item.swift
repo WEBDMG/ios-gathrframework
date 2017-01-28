@@ -17,7 +17,7 @@ public class Item{
     public var image:String = String()
     public var status:String = String()
     public var inventory:String = String()
-
+    
     
     public init(data: NSDictionary){
         if data["id"] != nil {

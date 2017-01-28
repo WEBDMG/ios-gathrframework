@@ -6,7 +6,7 @@
 //  Copyright © 2016 WEBDMG. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 /// Config object.
 public class Config:NSObject{
@@ -43,24 +43,24 @@ public class Config:NSObject{
         self.playmetoken = (response.valueForKey("config")?.valueForKey("playmetoken")?.objectAtIndex(0))! as! String
         self.playmeapplayout = (response.valueForKey("config")?.valueForKey("playmeapplayout")?.objectAtIndex(0))! as! String
     }
-        
+    
     func toDictionary() -> NSDictionary {
         let configDictionary = [
-        "blogurl": self.blogurl,
-         "playmeappappleid": self.playmeappappleid,
-         "playmeappfacebookurl": self.playmeappfacebookurl,
-         "playmeapphomeurl": self.playmeapphomeurl,
-         "playmeappid": self.playmeappid,
-         "playmeappinstagramurl": self.playmeappinstagramurl,
-         "playmeappkeywords": self.playmeappkeywords,
-         "playmeapplandingpageactive": self.playmeapplandingpageactive,
-         "playmeappname": self.playmeappname,
-         "playmeappnameformatted": self.playmeappnameformatted,
-         "playmeappstoreurl": self.playmeappstoreurl,
-         "playmeapptoken": self.playmeapptoken,
-         "playmeapptwitterurl": self.playmeapptwitterurl,
-         "playmetoken": self.playmetoken,
-         "playmeapplayout":self.playmeapplayout
+            "blogurl": self.blogurl,
+            "playmeappappleid": self.playmeappappleid,
+            "playmeappfacebookurl": self.playmeappfacebookurl,
+            "playmeapphomeurl": self.playmeapphomeurl,
+            "playmeappid": self.playmeappid,
+            "playmeappinstagramurl": self.playmeappinstagramurl,
+            "playmeappkeywords": self.playmeappkeywords,
+            "playmeapplandingpageactive": self.playmeapplandingpageactive,
+            "playmeappname": self.playmeappname,
+            "playmeappnameformatted": self.playmeappnameformatted,
+            "playmeappstoreurl": self.playmeappstoreurl,
+            "playmeapptoken": self.playmeapptoken,
+            "playmeapptwitterurl": self.playmeapptwitterurl,
+            "playmetoken": self.playmetoken,
+            "playmeapplayout":self.playmeapplayout
         ]
         return configDictionary
     }

@@ -16,7 +16,7 @@ public class Video{
     public var videoM:String = String()
     public var image:String = String()
     public var type:String = String()
-
+    
     
     public init(data: NSDictionary){
         if data["sidvid"] != nil {

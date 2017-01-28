@@ -60,7 +60,7 @@ public class Text {
         if dictionary.valueForKey("date") != nil {
             self.date = dictionary.valueForKey("date") as! String
         }
-
+        
     }
     
     func toDictionary() -> NSDictionary {
