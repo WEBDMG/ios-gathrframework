@@ -10,38 +10,28 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-public class GetText: NSObject {
-    public var text:[Text] = [Text]()
+open class GetText: NSObject {
+
+    var text:[Text] = [Text]()
     
     //Create a singleton
-    public class var sharedInstance: GetText {
-        struct Static {
-            static var instance: GetText?
-            static var token: dispatch_once_t = 0
-        }
-        
-        dispatch_once(&Static.token) {
-            Static.instance = GetText()
-        }
-        
-        return Static.instance!
-    }
+    open static let sharedInstance: GetText = {
+        let instance = GetText()
+        // setup code
+        return instance
+    }()
     
-    /// Get all texts.
-    ///
-    /// - Parameter completion: Array of Text objects.
-    public func getAllTexts(completion: ([Text]?) -> Void) {
+    open func getAllTexts(_ completion: @escaping ([Text]?) -> Void) {
         var config: NSDictionary?
         
-        if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {
+        if let path = Bundle.main.path(forResource: "PlayMe", ofType: "plist") {
             config = NSDictionary(contentsOfFile: path)
         }
         if let dict = config {
+            let token = "\(dict.value(forKey: "TOKEN")!)"
+            let header = ["X-API-KEY":token]
             Alamofire.request(
-                .GET,
-                "\(dict.valueForKey("BASE_URL")!)"+"texts/token/"+"\(dict.valueForKey("PLAYMEAPPTOKEN")!)",
-                parameters: nil,
-                encoding: .URL)
+                "\(dict.value(forKey: "BASE_URL")!)"+"texts/token/"+"\(dict.value(forKey: "PLAYMEAPPTOKEN")!)",headers:header)
                 .validate()
                 .responseJSON { (response) -> Void in
                     self.text = [Text]()
@@ -57,5 +47,5 @@ public class GetText: NSObject {
             }
         }
     }
-
+    
 }

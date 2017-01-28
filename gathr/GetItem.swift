@@ -10,38 +10,29 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-public class GetItem:NSObject{
-   public var item:[Item] = [Item]()
+open class GetItem:NSObject{
+
+    var item:[Item] = [Item]()
     
     //Create a singleton
-    public class var sharedInstance: GetItem {
-        struct Static {
-            static var instance: GetItem?
-            static var token: dispatch_once_t = 0
-        }
-        
-        dispatch_once(&Static.token) {
-            Static.instance = GetItem()
-        }
-        
-        return Static.instance!
-    }
+    open static let sharedInstance: GetItem = {
+        let instance = GetItem()
+        // setup code
+        return instance
+    }()
     
-    /// Get all items.
-    ///
-    /// - Parameter completion: Array of item objects.
-    public func getAllItems(completion: ([Item]?) -> Void) {
+    
+    open func getAllItems(_ completion: @escaping ([Item]?) -> Void) {
         var config: NSDictionary?
         
-        if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {
+        if let path = Bundle.main.path(forResource: "PlayMe", ofType: "plist") {
             config = NSDictionary(contentsOfFile: path)
         }
         if let dict = config {
-            Alamofire.request(
-                .GET,
-                "\(dict.valueForKey("BASE_URL")!)"+"items/token/"+"\(dict.valueForKey("PLAYMEAPPTOKEN")!)",
-                parameters: nil,
-                encoding: .URL)
+            let token = "\(dict.value(forKey: "TOKEN")!)"
+            let header = ["X-API-KEY":token]
+            let url =   "\(dict.value(forKey: "BASE_URL")!)" + "items/token/" + "\(dict.value(forKey: "PLAYMEAPPTOKEN")!)"
+            Alamofire.request(url,header:header)
                 .validate()
                 .responseJSON { (response) -> Void in
                     self.item = [Item]()

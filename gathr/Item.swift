@@ -8,8 +8,7 @@
 
 import Foundation
 
-/// Item object.
-public class Item{
+open class Item{
     public var id:String = String()
     public var name:String = String()
     public var desc:String = String()
@@ -17,9 +16,9 @@ public class Item{
     public var image:String = String()
     public var status:String = String()
     public var inventory:String = String()
-
     
-    public init(data: NSDictionary){
+    
+    init(data: NSDictionary){
         if data["id"] != nil {
             self.id = String(data["id"] as! String)
         }
@@ -43,31 +42,31 @@ public class Item{
         }
     }
     
-    public init(dictionary: NSDictionary){
-        if dictionary.valueForKey("id") != nil {
-            self.id = dictionary.valueForKey("id") as! String
+    init(dictionary: NSDictionary){
+        if dictionary.value(forKey: "id") != nil {
+            self.id = dictionary.value(forKey: "id") as! String
         }
-        if dictionary.valueForKey("name") != nil {
-            self.name = dictionary.valueForKey("name") as! String
+        if dictionary.value(forKey: "name") != nil {
+            self.name = dictionary.value(forKey: "name") as! String
         }
-        if dictionary.valueForKey("desc") != nil {
-            self.desc = dictionary.valueForKey("desc") as! String
+        if dictionary.value(forKey: "desc") != nil {
+            self.desc = dictionary.value(forKey: "desc") as! String
         }
-        if dictionary.valueForKey("price") != nil {
-            self.price = dictionary.valueForKey("price") as! String
+        if dictionary.value(forKey: "price") != nil {
+            self.price = dictionary.value(forKey: "price") as! String
         }
-        if dictionary.valueForKey("image") != nil{
-            self.image = dictionary.valueForKey("image") as! String
+        if dictionary.value(forKey: "image") != nil{
+            self.image = dictionary.value(forKey: "image") as! String
         }
-        if dictionary.valueForKey("status") != nil {
-            self.status = dictionary.valueForKey("status") as! String
+        if dictionary.value(forKey: "status") != nil {
+            self.status = dictionary.value(forKey: "status") as! String
         }
-        if dictionary.valueForKey("inventory") != nil {
-            self.inventory = dictionary.valueForKey("inventory") as! String
+        if dictionary.value(forKey: "inventory") != nil {
+            self.inventory = dictionary.value(forKey: "inventory") as! String
         }
     }
     
-    func toDictionary() -> NSDictionary {
+    open func toDictionary() -> NSDictionary {
         let itemDictionary = [
             "id":self.id,
             "name":self.name,
@@ -77,6 +76,6 @@ public class Item{
             "status":self.status,
             "inventory":self.inventory
         ]
-        return itemDictionary
+        return itemDictionary as NSDictionary
     }
 }

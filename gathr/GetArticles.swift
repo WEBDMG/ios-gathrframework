@@ -10,35 +10,17 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-public class GetArticles : NSObject{
-    public var articles:[Articles] = [Articles]()
+open class GetArticles : NSObject{
+    var articles:[Articles] = [Articles]()
     
-    //Create a singleton
-    public class var sharedInstance: GetArticles {
-        struct Static {
-            static var instance: GetArticles?
-            static var token: dispatch_once_t = 0
-        }
-        
-        dispatch_once(&Static.token) {
-            Static.instance = GetArticles()
-        }
-        
-        return Static.instance!
-    }
-    
-    
-    /// Pulls blog posts from WordPress based Blogs.
-    ///
-    /// - Parameters:
-    ///   - blogURL: String Base Url to blog.
-    ///   - completion: Array of Dictionaries
-    public func getAllArticles(blogURL:String, completion: ([Articles]?) -> Void) {
-        Alamofire.request(
-            .GET,
-            blogURL + "/wp-json/posts?filter[posts_per_page]=13&filter[order]=DESC",
-            parameters: nil,
-            encoding: .URL)
+    open static let sharedInstance: GetArticles = {
+        let instance = GetArticles()
+        // setup code
+        return instance
+    }()
+
+    open func getAllArticles(_ blogURL:String, completion: @escaping ([Articles]?) -> Void) {
+        Alamofire.request(blogURL + "/wp-json/posts?filter[posts_per_page]=13&filter[order]=DESC")
             .validate()
             .responseJSON { (response) -> Void in
                 self.articles = [Articles]()

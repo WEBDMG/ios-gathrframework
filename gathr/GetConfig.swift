@@ -9,20 +9,15 @@
 import UIKit
 import Alamofire
 
-public class GetConfig : NSObject{
-        /// Create a singleton
-   public class var sharedInstance: GetConfig {
-        struct Static {
-            static var instance: GetConfig?
-            static var token: dispatch_once_t = 0
-        }
-        
-        dispatch_once(&Static.token) {
-            Static.instance = GetConfig()
-        }
-        
-        return Static.instance!
-    }
+open class GetConfig : NSObject{
+
+    
+open static let sharedInstance: GetConfig = {
+        let instance = GetConfig()
+        // setup code
+        return instance
+    }()
+    
     
     /**
      Gets remote config data and passes it back as a dictionary.
@@ -30,31 +25,26 @@ public class GetConfig : NSObject{
      
      - parameter completion: NSDictionary of result
      */
-    public func getConfigApi(completion: (NSDictionary) -> Void){
+    open func getConfigApi(_ completion: @escaping (NSDictionary) -> Void){
         var config: NSDictionary?
-       
-        if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {
+        
+        if let path = Bundle.main.path(forResource: "PlayMe", ofType: "plist") {
             config = NSDictionary(contentsOfFile: path)
         }
         if let dict = config {
-            let token = "\(dict.valueForKey("TOKEN")!)"
+            let token = "\(dict.value(forKey: "TOKEN")!)"
             let header = ["X-API-KEY":token]
-            Alamofire.request(
-                .GET,
-                "\(dict.valueForKey("BASE_URL")!)"+"config/config/token/"+"\(dict.valueForKey("PLAYMEAPPTOKEN")!)",
-                headers:header,
-                encoding: .URLEncodedInURL)
+            let url = "\(dict.value(forKey: "BASE_URL")!)" + "config/config/token/" + "\(dict.value(forKey:"PLAYMEAPPTOKEN")!)" as! String
+            Alamofire.request(url, headers: header)
                 .validate()
                 .responseJSON { response in
-                    switch response.result {
-                    case .Success:
-                        completion(response.result.value as! NSDictionary)
-                    case .Failure(let error):
-                        print(error)
-                    }
-                }
+                    print(response.request)
+                    print(response.response)
+                    print(response.request)
+                    completion(response.result.value as! NSDictionary)
             }
         }
+    }
+    
+    
 }
-
-

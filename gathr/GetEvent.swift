@@ -10,39 +10,28 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-public class GetEvent : NSObject{
-    public var event:[Event] = [Event]()
+open class GetEvent : NSObject{
+
+    var event:[Event] = [Event]()
     
     //Create a singleton
-    public class var sharedInstance: GetEvent {
-        struct Static {
-            static var instance: GetEvent?
-            static var token: dispatch_once_t = 0
-        }
-        
-        dispatch_once(&Static.token) {
-            Static.instance = GetEvent()
-        }
-        
-        return Static.instance!
-    }
+    open static let sharedInstance: GetEvent = {
+        let instance = GetEvent()
+        // setup code
+        return instance
+    }()
     
-    
-    /// Get all Events.
-    ///
-    /// - Parameter completion: Array of event objects.
-    public func getAllEvents(completion: ([Event]?) -> Void) {
+    open func getAllEvents(_ completion: @escaping ([Event]?) -> Void) {
         var config: NSDictionary?
         
-        if let path = NSBundle.mainBundle().pathForResource("PlayMe", ofType: "plist") {
+        if let path = Bundle.main.path(forResource: "PlayMe", ofType: "plist") {
             config = NSDictionary(contentsOfFile: path)
         }
         if let dict = config {
-            Alamofire.request(
-                .GET,
-                "\(dict.valueForKey("BASE_URL")!)"+"events/token/"+"\(dict.valueForKey("PLAYMEAPPTOKEN")!)",
-                parameters: nil,
-                encoding: .URL)
+            let token = "\(dict.value(forKey: "TOKEN")!)"
+            let header = ["X-API-KEY":token]
+            let url =  "\(dict.value(forKey: "BASE_URL")!)" + "events/token/" + "\(dict.value(forKey: "PLAYMEAPPTOKEN")!)"
+            Alamofire.request(url,headers:header)
                 .validate()
                 .responseJSON { (response) -> Void in
                     self.event = [Event]()
