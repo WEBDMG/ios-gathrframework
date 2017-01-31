@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 open class GetItem:NSObject{
-
+    
     var item:[Item] = [Item]()
     
     //Create a singleton

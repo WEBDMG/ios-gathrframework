@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 open class GetVideo: NSObject{
-
+    
     var video:[Video] = [Video]()
     
     //Create a singleton

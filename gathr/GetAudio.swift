@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 open class GetAudio : NSObject{
-
+    
     var audio:[Audio] = [Audio]()
     
     open static let sharedInstance: GetAudio = {

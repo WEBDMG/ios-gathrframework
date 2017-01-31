@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 open class GetPhotos : NSObject{
-
+    
     var photos:[Photo] = [Photo]()
     
     //Create a singleton

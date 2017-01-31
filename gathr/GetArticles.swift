@@ -18,7 +18,7 @@ open class GetArticles : NSObject{
         // setup code
         return instance
     }()
-
+    
     open func getAllArticles(_ blogURL:String, completion: @escaping ([Articles]?) -> Void) {
         Alamofire.request(blogURL + "/wp-json/posts?filter[posts_per_page]=13&filter[order]=DESC")
             .validate()

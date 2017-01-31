@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 open class GetEvent : NSObject{
-
+    
     var event:[Event] = [Event]()
     
     //Create a singleton

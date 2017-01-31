@@ -10,9 +10,9 @@ import UIKit
 import Alamofire
 
 open class GetConfig : NSObject{
-
     
-open static let sharedInstance: GetConfig = {
+    
+    open static let sharedInstance: GetConfig = {
         let instance = GetConfig()
         // setup code
         return instance
