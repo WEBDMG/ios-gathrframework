@@ -32,7 +32,7 @@ open class GetItem:NSObject{
             let token = "\(dict.value(forKey: "TOKEN")!)"
             let header = ["X-API-KEY":token]
             let url =   "\(dict.value(forKey: "BASE_URL")!)" + "items/token/" + "\(dict.value(forKey: "PLAYMEAPPTOKEN")!)"
-            Alamofire.request(url,header:header)
+            Alamofire.request(url, headers: header)
                 .validate()
                 .responseJSON { (response) -> Void in
                     self.item = [Item]()
