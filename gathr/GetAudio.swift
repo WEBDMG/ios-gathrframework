@@ -28,7 +28,7 @@ open class GetAudio : NSObject{
         }
         if let dict = config {
             let token = "\(dict.value(forKey: "TOKEN")!)"
-            let header = ["X-API-KEY":token]
+            let header:HTTPHeaders = ["X-API-KEY":token]
             Alamofire.request("\(dict.value(forKey: "BASE_URL")!)"+"songs/token/"+"\(dict.value(forKey: "PLAYMEAPPTOKEN")!)",headers:header)
                 .validate()
                 .responseJSON { (response) -> Void in
