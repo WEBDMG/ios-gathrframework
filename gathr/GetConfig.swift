@@ -10,14 +10,21 @@ import UIKit
 import Alamofire
 
 open class GetConfig : NSObject{
-    
+    open var config: Config!
     
     open static let sharedInstance: GetConfig = {
         let instance = GetConfig()
         // setup code
+        
         return instance
     }()
     
+    override init() {
+        super.init()
+       self.getConfigApi({ (config) in
+            self.config = config
+        })
+    }
     
     /**
      Gets remote config data and passes it back as a dictionary.
@@ -25,20 +32,21 @@ open class GetConfig : NSObject{
      
      - parameter completion: NSDictionary of result
      */
-    open func getConfigApi(_ completion: @escaping (NSDictionary) -> Void){
-        var config: NSDictionary?
-        
+    open func getConfigApi(_ completion: @escaping (Config) -> Void){
+         var playme: NSDictionary?
         if let path = Bundle.main.path(forResource: "PlayMe", ofType: "plist") {
-            config = NSDictionary(contentsOfFile: path)
+            playme = NSDictionary(contentsOfFile: path)
         }
-        if let dict = config {
-            let token = "\(dict.value(forKey: "TOKEN"))"
+        if let dict = playme {
+            let token = "\(dict.value(forKey: "TOKEN")!)"
             let header:HTTPHeaders = ["X-API-KEY":token]
-            let url = "\(dict.value(forKey: "BASE_URL"))" + "config/config/token/" + "\(dict.value(forKey:"PLAYMEAPPTOKEN"))"
+            let url = "\(dict.value(forKey: "BASE_URL")!)" + "config/config/token/" + "\(dict.value(forKey:"PLAYMEAPPTOKEN")!)"
             Alamofire.request(url, headers: header)
                 .validate()
                 .responseJSON { response in
-                    completion(response.result.value as! NSDictionary)
+                    let data = response.result.value as! NSDictionary
+                    self.config = Config(response: data)!
+                    completion(self.config)
             }
         }
     }
