@@ -38,9 +38,6 @@ open class GetConfig : NSObject{
             Alamofire.request(url, headers: header)
                 .validate()
                 .responseJSON { response in
-                    print(response.request)
-                    print(response.response)
-                    print(response.request)
                     completion(response.result.value as! NSDictionary)
             }
         }
