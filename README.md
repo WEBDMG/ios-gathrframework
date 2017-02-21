@@ -1,29 +1,43 @@
-# README #
+# Gathr Framework
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Requirements 
+___
 
-### What is this repository for? ###
+- iOS 9.0+
+- Xcode 8.2+
+- Swift 3.0
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Installation
+___
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
-### How do I get set up? ###
+``` $ gem install cocoapods ``` 
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```
 
-### Contribution guidelines ###
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://bitbucket.org/webdmg/wspecs.git'
 
-* Writing tests
-* Code review
-* Other guidelines
+platform :ios, '9.0'
+use_frameworks!
 
-### Who do I talk to? ###
+target '<Your Target Name>' do
+    pod 'gathrFramework', '~> 1.0.0'
+end
 
-* Repo owner or admin
-* Other community or team contact
+```
+
+Then, run the following command:
+
+``` $ pod install ```
+
+
+### Usage
+
+```
+import  gathrFramework
+_ = GConfiguration()
+
+```
+In app delegate inside ```func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {``` Method
