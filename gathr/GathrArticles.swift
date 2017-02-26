@@ -1,5 +1,5 @@
 //
-//  GetNews.swift
+//  GathrNews.swift
 //  WEBDMG
 //
 //  Created by Richard Robinson on 6/6/16.
@@ -10,14 +10,22 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-open class GetArticles : NSObject{
+open class GathrArticles : NSObject{
     var articles:[Articles] = [Articles]()
+    var config:Config!
     
-    open static let sharedInstance: GetArticles = {
-        let instance = GetArticles()
-        // setup code
-        return instance
-    }()
+    open static let sharedInstance = GathrArticles()
+    
+    override init() {
+        super.init()
+        GathrConfig.sharedInstance.getConfigApi({ (config) in
+            self.config = config
+            
+            self.getAllArticles(self.config.blogurl, completion: { (article) in
+                self.articles = article!
+            })
+        })
+    }
     
     open func getAllArticles(_ blogURL:String, completion: @escaping ([Articles]?) -> Void) {
         Alamofire.request(blogURL + "/wp-json/posts?filter[posts_per_page]=13&filter[order]=DESC")

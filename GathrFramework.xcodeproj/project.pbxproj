@@ -25,6 +25,7 @@
 		C222BFA91E3880EF00897FB7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360F11E3862D3000FF773 /* Item.swift */; };
 		C222BFAA1E3880EF00897FB7 /* GetText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360F21E3862D3000FF773 /* GetText.swift */; };
 		C222BFAB1E3880EF00897FB7 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360F31E3862D3000FF773 /* Text.swift */; };
+		C2B80CBF1E5CE6380079DB5B /* GathrConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B80CBE1E5CE6380079DB5B /* GathrConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C203610D1E38638F000FF773 /* gathr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gathr.h; sourceTree = "<group>"; };
 		C203610E1E38638F000FF773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C21BEE7C1E3AF58400060888 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C2B80CBE1E5CE6380079DB5B /* GathrConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				C20360F21E3862D3000FF773 /* GetText.swift */,
 				C203610E1E38638F000FF773 /* Info.plist */,
 				C21BEE7C1E3AF58400060888 /* LICENSE */,
+				C2B80CBE1E5CE6380079DB5B /* GathrConfiguration.swift */,
 			);
 			name = Gathr;
 			path = gathr;
@@ -190,6 +193,7 @@
 				C222BFA61E3880EF00897FB7 /* GetEvent.swift in Sources */,
 				C222BFA31E3880EF00897FB7 /* Audio.swift in Sources */,
 				C222BFA81E3880EF00897FB7 /* GetItem.swift in Sources */,
+				C2B80CBF1E5CE6380079DB5B /* GathrConfiguration.swift in Sources */,
 				C222BFA11E3880EF00897FB7 /* Photo.swift in Sources */,
 				C222BFAA1E3880EF00897FB7 /* GetText.swift in Sources */,
 				C222BFA91E3880EF00897FB7 /* Item.swift in Sources */,
