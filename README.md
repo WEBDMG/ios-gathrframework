@@ -1,5 +1,9 @@
 # Gathr Framework
 
+![alt text](https://img.shields.io/badge/Vers%3A-3-333.svg?style=flat "Version 3")
+![alt text](https://img.shields.io/badge/Gathr%20API%20Vers%3A-4-lightgrey.svg?style=flat "Gathr API Verson")
+![alt text](https://img.shields.io/badge/Platform%3A-iOS-blue.svg?style=flat "Platforms")
+[![Twitter](https://img.shields.io/badge/Twitter%3A-%40WEBDMG-blue.svg?style=flat)](http://twitter.com/WEBDMG)
 ### Requirements 
 ___
 
@@ -11,8 +15,6 @@ ___
 ___
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
-``` $ gem install cocoapods ``` 
-
 To integrate GathrFramework into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```
 
@@ -23,7 +25,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'gathrFramework', '~> 1.0.0'
+    pod 'gathrFramework', '~> 3.0.0'
 end
 
 ```
