@@ -13,7 +13,7 @@ ___
 
 ``` $ gem install cocoapods ``` 
 
-To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate GathrFramework into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```
 
 source 'https://github.com/CocoaPods/Specs.git'
