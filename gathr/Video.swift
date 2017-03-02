@@ -8,8 +8,7 @@
 
 import Foundation
 
-/// Video object.
-public class Video{
+open class Video{
     public var sidvid:String = String()
     public var title:String = String()
     public var video:String = String()
@@ -18,7 +17,7 @@ public class Video{
     public var type:String = String()
     
     
-    public init(data: NSDictionary){
+    init(data: NSDictionary){
         if data["sidvid"] != nil {
             self.sidvid = String(data["sidvid"] as! String)
         }
@@ -40,28 +39,28 @@ public class Video{
         
     }
     
-    public init(dictionary: NSDictionary){
-        if dictionary.valueForKey("sidvid") != nil {
-            self.sidvid = dictionary.valueForKey("sidvid") as! String
+    init(dictionary: NSDictionary){
+        if dictionary.value(forKey: "sidvid") != nil {
+            self.sidvid = dictionary.value(forKey: "sidvid") as! String
         }
-        if dictionary.valueForKey("title") != nil {
-            self.title = dictionary.valueForKey("title") as! String
+        if dictionary.value(forKey: "title") != nil {
+            self.title = dictionary.value(forKey: "title") as! String
         }
-        if dictionary.valueForKey("video") != nil {
-            self.video = dictionary.valueForKey("video") as! String
+        if dictionary.value(forKey: "video") != nil {
+            self.video = dictionary.value(forKey: "video") as! String
         }
-        if dictionary.valueForKey("videoM") != nil{
-            self.videoM = dictionary.valueForKey("videoM") as! String
+        if dictionary.value(forKey: "videoM") != nil{
+            self.videoM = dictionary.value(forKey: "videoM") as! String
         }
-        if dictionary.valueForKey("image") != nil {
-            self.image = dictionary.valueForKey("image") as! String
+        if dictionary.value(forKey: "image") != nil {
+            self.image = dictionary.value(forKey: "image") as! String
         }
-        if dictionary.valueForKey("type") != nil {
-            self.type = dictionary.valueForKey("type") as! String
+        if dictionary.value(forKey: "type") != nil {
+            self.type = dictionary.value(forKey: "type") as! String
         }
     }
     
-    func toDictionary() -> NSDictionary {
+    open func toDictionary() -> NSDictionary {
         let videoDictionary = [
             "sidvid":self.sidvid,
             "title":self.title,
@@ -69,6 +68,6 @@ public class Video{
             "image":self.image,
             "type":self.type
         ]
-        return videoDictionary
+        return videoDictionary as NSDictionary
     }
 }

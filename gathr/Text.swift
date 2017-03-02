@@ -7,11 +7,8 @@
 //
 
 import Foundation
-import Alamofire
-import SwiftyJSON
 
-/// Text object
-public class Text {
+open class Text {
     public var textid:String = String()
     public var title:String = String()
     public var text:String = String()
@@ -20,7 +17,7 @@ public class Text {
     public var date:String = String()
     
     
-    public init(data: NSDictionary){
+    init(data: NSDictionary){
         if data["textid"] != nil {
             self.textid = String(data["textid"] as! String)
         }
@@ -41,29 +38,29 @@ public class Text {
         }
     }
     
-    public init(dictionary: NSDictionary){
-        if dictionary.valueForKey("textid") != nil {
-            self.textid = dictionary.valueForKey("textid") as! String
+    init(dictionary: NSDictionary){
+        if dictionary.value(forKey: "textid") != nil {
+            self.textid = dictionary.value(forKey: "textid") as! String
         }
-        if dictionary.valueForKey("title") != nil {
-            self.title = dictionary.valueForKey("title") as! String
+        if dictionary.value(forKey: "title") != nil {
+            self.title = dictionary.value(forKey: "title") as! String
         }
-        if dictionary.valueForKey("text") != nil {
-            self.text = dictionary.valueForKey("text") as! String
+        if dictionary.value(forKey: "text") != nil {
+            self.text = dictionary.value(forKey: "text") as! String
         }
-        if dictionary.valueForKey("author") != nil {
-            self.author = dictionary.valueForKey("author") as! String
+        if dictionary.value(forKey: "author") != nil {
+            self.author = dictionary.value(forKey: "author") as! String
         }
-        if dictionary.valueForKey("type") != nil{
-            self.type = dictionary.valueForKey("type") as! String
+        if dictionary.value(forKey: "type") != nil{
+            self.type = dictionary.value(forKey: "type") as! String
         }
-        if dictionary.valueForKey("date") != nil {
-            self.date = dictionary.valueForKey("date") as! String
+        if dictionary.value(forKey: "date") != nil {
+            self.date = dictionary.value(forKey: "date") as! String
         }
         
     }
     
-    func toDictionary() -> NSDictionary {
+    open func toDictionary() -> NSDictionary {
         let itemDictionary = [
             "textid":self.textid,
             "title":self.title,
@@ -72,6 +69,6 @@ public class Text {
             "type":self.type,
             "date":self.date
         ]
-        return itemDictionary
+        return itemDictionary as NSDictionary
     }
 }

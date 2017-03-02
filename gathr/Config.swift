@@ -8,8 +8,7 @@
 
 import Foundation
 
-/// Config object.
-public class Config:NSObject{
+open class Config:NSObject{
     public var blogurl = ""
     public var playmeappappleid = ""
     public var playmeappfacebookurl = ""
@@ -24,27 +23,25 @@ public class Config:NSObject{
     public var playmeapptoken = ""
     public var playmeapptwitterurl = ""
     public var playmetoken = ""
-    public var playmeapplayout = ""
     
     public init?(response:NSDictionary) {
-        self.blogurl = (response.valueForKey("config")?.valueForKey("blogurl")?.objectAtIndex(0))! as! String
-        self.playmeappappleid = (response.valueForKey("config")?.valueForKey("playmeappappleid")?.objectAtIndex(0))! as! String
-        self.playmeappfacebookurl = (response.valueForKey("config")?.valueForKey("playmeappfacebookurl")?.objectAtIndex(0))! as! String
-        self.playmeapphomeurl = (response.valueForKey("config")?.valueForKey("playmeapphomeurl")?.objectAtIndex(0))! as! String
-        self.playmeappid = (response.valueForKey("config")?.valueForKey("playmeappid")?.objectAtIndex(0))! as! String
-        self.playmeappinstagramurl = (response.valueForKey("config")?.valueForKey("playmeappinstagramurl")?.objectAtIndex(0))! as! String
+        self.blogurl = (((response.value(forKey: "config") as AnyObject).value(forKey: "blogurl") as AnyObject).object(at: 0)) as! String
+        self.playmeappappleid = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeappappleid") as AnyObject).object(at: 0)) as! String
+        self.playmeappfacebookurl = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeappfacebookurl") as AnyObject).object(at: 0)) as! String
+        self.playmeapphomeurl = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeapphomeurl") as AnyObject).object(at: 0)) as! String
+        self.playmeappid = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeappid") as AnyObject).object(at: 0)) as! String
+        self.playmeappinstagramurl = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeappinstagramurl") as AnyObject).object(at: 0)) as! String
         //self.playmeappkeywords = (response.valueForKey("config")?.valueForKey("playmeappkeywords")?.objectAtIndex(0))! as! String
-        self.playmeapplandingpageactive = (response.valueForKey("config")?.valueForKey("playmeapplandingpageactive")?.objectAtIndex(0))! as! String
-        self.playmeappname = (response.valueForKey("config")?.valueForKey("playmeappname")?.objectAtIndex(0))! as! String
-        self.playmeappnameformatted = (response.valueForKey("config")?.valueForKey("playmeappnameformatted")?.objectAtIndex(0))! as! String
-        self.playmeappstoreurl = (response.valueForKey("config")?.valueForKey("playmeappstoreurl")?.objectAtIndex(0))! as! String
-        self.playmeapptoken = (response.valueForKey("config")?.valueForKey("playmeapptoken")?.objectAtIndex(0))! as! String
-        self.playmeapptwitterurl = (response.valueForKey("config")?.valueForKey("playmeapptwitterurl")?.objectAtIndex(0))! as! String
-        self.playmetoken = (response.valueForKey("config")?.valueForKey("playmetoken")?.objectAtIndex(0))! as! String
-        self.playmeapplayout = (response.valueForKey("config")?.valueForKey("playmeapplayout")?.objectAtIndex(0))! as! String
+        self.playmeapplandingpageactive = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeapplandingpageactive") as AnyObject).object(at: 0)) as! String
+        self.playmeappname = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeappname") as AnyObject).object(at: 0)) as! String
+        self.playmeappnameformatted = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeappnameformatted") as AnyObject).object(at: 0)) as! String
+        self.playmeappstoreurl = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeappstoreurl") as AnyObject).object(at: 0)) as! String
+        self.playmeapptoken = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeapptoken") as AnyObject).object(at: 0)) as! String
+        self.playmeapptwitterurl = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeapptwitterurl") as AnyObject).object(at: 0)) as! String
+        self.playmetoken = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmetoken") as AnyObject).object(at: 0)) as! String
     }
     
-    func toDictionary() -> NSDictionary {
+    open func toDictionary() -> NSDictionary {
         let configDictionary = [
             "blogurl": self.blogurl,
             "playmeappappleid": self.playmeappappleid,
@@ -59,9 +56,8 @@ public class Config:NSObject{
             "playmeappstoreurl": self.playmeappstoreurl,
             "playmeapptoken": self.playmeapptoken,
             "playmeapptwitterurl": self.playmeapptwitterurl,
-            "playmetoken": self.playmetoken,
-            "playmeapplayout":self.playmeapplayout
+            "playmetoken": self.playmetoken
         ]
-        return configDictionary
+        return configDictionary as NSDictionary
     }
 }

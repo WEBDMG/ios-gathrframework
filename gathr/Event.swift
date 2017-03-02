@@ -8,8 +8,7 @@
 
 import Foundation
 
-/// Event object.
-public class Event{
+open class Event{
     public var eventid:String = String()
     public var venuename:String = String()
     public var address:String = String()
@@ -20,7 +19,7 @@ public class Event{
     public var marketinglink:String = String()
     public var image:String = String()
     
-    public init(data: NSDictionary){
+    init(data: NSDictionary){
         if data["eventid"] != nil {
             self.eventid = String(data["eventid"] as! String)
         }
@@ -50,37 +49,37 @@ public class Event{
         }
     }
     
-    public init(dictionary: NSDictionary){
-        if dictionary.valueForKey("eventid") != nil {
-            self.eventid = dictionary.valueForKey("eventid") as! String
+    init(dictionary: NSDictionary){
+        if dictionary.value(forKey: "eventid") != nil {
+            self.eventid = dictionary.value(forKey: "eventid") as! String
         }
-        if dictionary.valueForKey("venuename") != nil {
-            self.venuename = dictionary.valueForKey("venuename") as! String
+        if dictionary.value(forKey: "venuename") != nil {
+            self.venuename = dictionary.value(forKey: "venuename") as! String
         }
-        if dictionary.valueForKey("address") != nil {
-            self.address = dictionary.valueForKey("address") as! String
+        if dictionary.value(forKey: "address") != nil {
+            self.address = dictionary.value(forKey: "address") as! String
         }
-        if dictionary.valueForKey("date") != nil {
-            self.date = dictionary.valueForKey("date") as! String
+        if dictionary.value(forKey: "date") != nil {
+            self.date = dictionary.value(forKey: "date") as! String
         }
-        if dictionary.valueForKey("time") != nil{
-            self.time = dictionary.valueForKey("time") as! String
+        if dictionary.value(forKey: "time") != nil{
+            self.time = dictionary.value(forKey: "time") as! String
         }
-        if dictionary.valueForKey("notes") != nil {
-            self.notes = dictionary.valueForKey("notes") as! String
+        if dictionary.value(forKey: "notes") != nil {
+            self.notes = dictionary.value(forKey: "notes") as! String
         }
-        if dictionary.valueForKey("ticketlink") != nil {
-            self.ticketlink = dictionary.valueForKey("ticketlink") as! String
+        if dictionary.value(forKey: "ticketlink") != nil {
+            self.ticketlink = dictionary.value(forKey: "ticketlink") as! String
         }
-        if dictionary.valueForKey("marketinglink") != nil {
-            self.marketinglink = dictionary.valueForKey("marketinglink") as! String
+        if dictionary.value(forKey: "marketinglink") != nil {
+            self.marketinglink = dictionary.value(forKey: "marketinglink") as! String
         }
-        if dictionary.valueForKey("image") != nil {
-            self.image = dictionary.valueForKey("image") as! String
+        if dictionary.value(forKey: "image") != nil {
+            self.image = dictionary.value(forKey: "image") as! String
         }
     }
     
-    func toDictionary() -> NSDictionary {
+    open func toDictionary() -> NSDictionary {
         let newsDictionary = [
             "eventid":self.eventid,
             "venuename":self.venuename,
@@ -92,7 +91,7 @@ public class Event{
             "marketinglink":self.marketinglink,
             "image":self.image
         ]
-        return newsDictionary
+        return newsDictionary as NSDictionary
     }
     
 }

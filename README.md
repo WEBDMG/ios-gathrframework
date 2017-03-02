@@ -1,29 +1,45 @@
-# README #
+# Gathr Framework
 
-This README would normally document whatever steps are necessary to get your application up and running.
+![alt text](https://img.shields.io/badge/Vers%3A-3-333.svg?style=flat "Version 3")
+![alt text](https://img.shields.io/badge/Gathr%20API%20Vers%3A-4-lightgrey.svg?style=flat "Gathr API Verson")
+![alt text](https://img.shields.io/badge/Platform%3A-iOS-blue.svg?style=flat "Platforms")
+[![Twitter](https://img.shields.io/badge/Twitter%3A-%40WEBDMG-blue.svg?style=flat)](http://twitter.com/WEBDMG)
+### Requirements 
+___
 
-### What is this repository for? ###
+- iOS 9.0+
+- Xcode 8.2+
+- Swift 3.0
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Installation
+___
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
-### How do I get set up? ###
+To integrate GathrFramework into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://bitbucket.org/webdmg/wspecs.git'
 
-### Contribution guidelines ###
+platform :ios, '9.0'
+use_frameworks!
 
-* Writing tests
-* Code review
-* Other guidelines
+target '<Your Target Name>' do
+    pod 'gathrFramework', '~> 3.0.0'
+end
 
-### Who do I talk to? ###
+```
 
-* Repo owner or admin
-* Other community or team contact
+Then, run the following command:
+
+``` $ pod install ```
+
+
+### Usage
+
+```
+import  gathrFramework
+_ = GConfiguration()
+
+```
+In app delegate inside ```func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {``` Method

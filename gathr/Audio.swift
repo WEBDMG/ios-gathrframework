@@ -8,13 +8,12 @@
 
 import Foundation
 
-/// Audio Object.
-public class Audio {
+open class Audio {
     public var sidid:String = String()
     public var title:String = String()
-    public var songs:NSURL = NSURL()
+    public var songs:String = String()
     public var video:String = String()
-    public var image:NSURL = NSURL()
+    public var link:String = String()
     public var aboutTrack:String = String()
     public var writtenBy:String = String()
     public var source:String = String()
@@ -22,7 +21,7 @@ public class Audio {
     public var facebook:String = String()
     public var twitter:String = String()
     
-    public init(data: NSDictionary){
+    init(data: NSDictionary){
         if data["sidid"] != nil {
             self.sidid = String(data["sidid"] as! String)
         }
@@ -30,13 +29,13 @@ public class Audio {
             self.title = String(data["title"] as! String)
         }
         if data["songs"] != nil {
-            self.songs = NSURL(string:data["songs"] as! String)!
+            self.songs = String(data["songs"] as! String)
         }
         if data["video"] != nil {
             self.video = String(data["video"] as! String)
         }
-        if data["image"] != nil{
-            self.image = NSURL(string:data["image"] as! String)!
+        if data["link"] != nil{
+            self.link = String(data["link"] as! String)
         }
         if data["aboutTrack"] != nil {
             self.aboutTrack = String(data["aboutTrack"] as! String)
@@ -59,49 +58,49 @@ public class Audio {
         
     }
     
-    public init(dictionary: NSDictionary){
-        if dictionary.valueForKey("sidid") != nil {
-            self.sidid = dictionary.valueForKey("sidid") as! String
+    init(dictionary: NSDictionary){
+        if dictionary.value(forKey: "sidid") != nil {
+            self.sidid = dictionary.value(forKey: "sidid") as! String
         }
-        if dictionary.valueForKey("title") != nil {
-            self.title = dictionary.valueForKey("title") as! String
+        if dictionary.value(forKey: "title") != nil {
+            self.title = dictionary.value(forKey: "title") as! String
         }
-        if dictionary.valueForKey("songs") != nil {
-            self.songs = NSURL(string:dictionary.valueForKey("songs") as! String)!
+        if dictionary.value(forKey: "songs") != nil {
+            self.songs = dictionary.value(forKey: "songs") as! String
         }
-        if dictionary.valueForKey("video") != nil {
-            self.video = dictionary.valueForKey("video") as! String
+        if dictionary.value(forKey: "video") != nil {
+            self.video = dictionary.value(forKey: "video") as! String
         }
-        if dictionary.valueForKey("image") != nil{
-            self.image = NSURL(string:dictionary.valueForKey("image") as! String)!
+        if dictionary.value(forKey: "link") != nil{
+            self.link = dictionary.value(forKey: "link") as! String
         }
-        if dictionary.valueForKey("aboutTrack") != nil {
-            self.aboutTrack = dictionary.valueForKey("aboutTrack") as! String
+        if dictionary.value(forKey: "aboutTrack") != nil {
+            self.aboutTrack = dictionary.value(forKey: "aboutTrack") as! String
         }
-        if dictionary.valueForKey("writtenBy") != nil {
-            self.writtenBy = dictionary.valueForKey("writtenBy") as! String
+        if dictionary.value(forKey: "writtenBy") != nil {
+            self.writtenBy = dictionary.value(forKey: "writtenBy") as! String
         }
-        if dictionary.valueForKey("source") != nil {
-            self.source = dictionary.valueForKey("source") as! String
+        if dictionary.value(forKey: "source") != nil {
+            self.source = dictionary.value(forKey: "source") as! String
         }
-        if dictionary.valueForKey("artistName") != nil {
-            self.artistName = dictionary.valueForKey("artistName") as! String
+        if dictionary.value(forKey: "artistName") != nil {
+            self.artistName = dictionary.value(forKey: "artistName") as! String
         }
-        if dictionary.valueForKey("facebook") != nil{
-            self.facebook = dictionary.valueForKey("facebook") as! String
+        if dictionary.value(forKey: "facebook") != nil{
+            self.facebook = dictionary.value(forKey: "facebook") as! String
         }
-        if dictionary.valueForKey("twitter") != nil{
-            self.twitter = dictionary.valueForKey("twitter") as! String
+        if dictionary.value(forKey: "twitter") != nil{
+            self.twitter = dictionary.value(forKey: "twitter") as! String
         }
     }
     
-    func toDictionary() -> NSDictionary {
+    open func toDictionary() -> NSDictionary {
         let newsDictionary = [
             "sidid":self.sidid,
             "title":self.title,
             "songs":self.songs,
             "video":self.video,
-            "image":self.image,
+            "link":self.link,
             "aboutTrack":self.aboutTrack,
             "writtenBy":self.writtenBy,
             "source":self.source,
@@ -109,6 +108,6 @@ public class Audio {
             "facebook":self.facebook,
             "twitter":self.twitter
         ]
-        return newsDictionary
+        return newsDictionary as NSDictionary
     }
 }

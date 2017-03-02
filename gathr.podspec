@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Gathr"
-  s.version      = "1.0.0"
+  s.version      = "2.0.0"
   s.summary      = "Gathr Framework for interacting with Gathr."
 
   # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "Apache License, Version 2.0"
-  #s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
+  s.license      = { :type => "Apache License, Version 2.0", :file => "./LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "gathr", "gathr/**/*.{h,m,swift}"
+  s.source_files  = "Gathr", "Gathr/**/*.{h,m,swift}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -132,7 +132,7 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "Alamofire", "~> 3.4"
-  s.dependency "SwiftyJSON", "~> 2.3"
+  s.dependency "Alamofire", "~> 4.3"
+  s.dependency "SwiftyJSON","~>3.1"
 
 end

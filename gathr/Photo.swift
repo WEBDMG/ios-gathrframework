@@ -8,13 +8,12 @@
 
 import Foundation
 
-/// Photo object.
-public class Photo {
+open class Photo {
     public var title:String = String()
     public var url:String = String()
     public var source:String = String()
     
-    public init(data: NSDictionary){
+    init(data: NSDictionary){
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
         }
@@ -27,25 +26,25 @@ public class Photo {
         
     }
     
-    public init(dictionary: NSDictionary){
-        if dictionary.valueForKey("title") != nil {
-            self.title = dictionary.valueForKey("title") as! String
+    init(dictionary: NSDictionary){
+        if dictionary.value(forKey: "title") != nil {
+            self.title = dictionary.value(forKey: "title") as! String
         }
-        if dictionary.valueForKey("url") != nil{
-            self.url = dictionary.valueForKey("url") as! String
+        if dictionary.value(forKey: "url") != nil{
+            self.url = dictionary.value(forKey: "url") as! String
         }
-        if dictionary.valueForKey("source") != nil{
-            self.source = dictionary.valueForKey("source") as! String
+        if dictionary.value(forKey: "source") != nil{
+            self.source = dictionary.value(forKey: "source") as! String
         }
         
     }
     
-    func toDictionary() -> NSDictionary {
+    open func toDictionary() -> NSDictionary {
         let photosDictionary = [
             "title":self.title,
             "excerpt":self.url,
             "source":self.source,
             ]
-        return photosDictionary
+        return photosDictionary as NSDictionary
     }
 }
