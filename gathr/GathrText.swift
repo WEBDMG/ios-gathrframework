@@ -26,7 +26,7 @@ open class GathrText: NSObject {
         let token = "\(GathrConfiguration.sharedInstance.TOKEN()!)"
         let header:HTTPHeaders = ["X-API-KEY":token]
         Alamofire.request(
-            "\(GathrConfiguration.sharedInstance.BASE_URL()!)"+"texts/token/"+"\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)",headers:header)
+            "\(GathrConfiguration.sharedInstance.BASE_URL()!)"+"text/texts/token/"+"\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)",headers:header)
             .validate()
             .responseJSON { (response) -> Void in
                 self.text = [Text]()
