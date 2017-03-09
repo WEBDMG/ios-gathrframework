@@ -16,6 +16,7 @@ public class GathrConfiguration: NSObject {
         public static let TOKEN = "TOKEN"
         public static let BASE_URL = "BASE_URL"
         public static let PLAYMEAPPTOKEN = "PLAYMEAPPTOKEN"
+        public static let API_KEY = "API_KEY"
     }
     
     public var configDictionary : NSDictionary?
@@ -43,5 +44,8 @@ public class GathrConfiguration: NSObject {
     public func PLAYMEAPPTOKEN()-> String?{
         return configDictionary?.object(forKey: Key.PLAYMEAPPTOKEN) as? String
     }
-
+    public func APIKEY()-> String?{
+        return configDictionary?.object(forKey: Key.API_KEY) as? String
+    }
+    
 }

@@ -27,8 +27,8 @@ open class GathrConfig : NSObject{
      - parameter completion: NSDictionary of result
      */
     open func getConfigApi(_ completion: @escaping (Config) -> Void){
-        let token = "\(GathrConfiguration.sharedInstance.TOKEN()!)"
-        let header:HTTPHeaders = ["X-API-KEY":token]
+        let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
+        let header:HTTPHeaders = ["X-API-KEY":apikey]
         let url = "\(GathrConfiguration.sharedInstance.BASE_URL()!)" + "config/config/token/" + "\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
         Alamofire.request(url, headers: header)
             .validate()

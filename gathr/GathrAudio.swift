@@ -24,8 +24,8 @@ open class GathrAudio : NSObject{
     }
     
     open func getAllSongs(_ completion: @escaping ([Audio]?) -> Void) {
-        let token = "\(GathrConfiguration.sharedInstance.TOKEN()!)"
-        let header:HTTPHeaders = ["X-API-KEY":token]
+        let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
+        let header:HTTPHeaders = ["X-API-KEY":apikey]
         Alamofire.request("\(GathrConfiguration.sharedInstance.BASE_URL()!)"+"audio/songs/token/"+"\(GathrConfiguration.sharedInstance.TOKEN()!)",headers:header)
             .validate()
             .responseJSON { (response) -> Void in

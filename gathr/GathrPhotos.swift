@@ -25,8 +25,8 @@ open class GathrPhotos : NSObject{
     }
     
     open func getAllPhotos(_ completion: @escaping ([Photo]?) -> Void) {
-        let token = "\(GathrConfiguration.sharedInstance.TOKEN()!)"
-        let header:HTTPHeaders = ["X-API-KEY":token]
+        let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
+        let header:HTTPHeaders = ["X-API-KEY":apikey]
         Alamofire.request("\(GathrConfiguration.sharedInstance.BASE_URL()!)"+"photo/photos/token/"+"\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)",headers:header)
             .validate()
             .responseJSON { (response) -> Void in

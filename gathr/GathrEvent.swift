@@ -25,8 +25,8 @@ open class GathrEvent : NSObject{
     }
     
     open func getAllEvents(_ completion: @escaping ([Event]?) -> Void) {
-        let token = "\(GathrConfiguration.sharedInstance.TOKEN()!)"
-        let header:HTTPHeaders = ["X-API-KEY":token]
+        let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
+        let header:HTTPHeaders = ["X-API-KEY":apikey]
         let url =  "\(GathrConfiguration.sharedInstance.BASE_URL()!)" + "event/events/token/" + "\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
         Alamofire.request(url,headers:header)
             .validate()

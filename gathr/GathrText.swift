@@ -23,8 +23,8 @@ open class GathrText: NSObject {
         })
     }
     open func getAllTexts(_ completion: @escaping ([Text]?) -> Void) {
-        let token = "\(GathrConfiguration.sharedInstance.TOKEN()!)"
-        let header:HTTPHeaders = ["X-API-KEY":token]
+        let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
+        let header:HTTPHeaders = ["X-API-KEY":apikey]
         Alamofire.request(
             "\(GathrConfiguration.sharedInstance.BASE_URL()!)"+"text/texts/token/"+"\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)",headers:header)
             .validate()

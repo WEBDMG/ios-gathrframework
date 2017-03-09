@@ -25,8 +25,8 @@ open class GathrVideo: NSObject{
     }
     
     open func getAllVideos(_ completion: @escaping ([Video]?) -> Void) {
-        let token = "\(GathrConfiguration.sharedInstance.TOKEN()!)"
-        let header:HTTPHeaders = ["X-API-KEY":token]
+        let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
+        let header:HTTPHeaders = ["X-API-KEY":apikey]
         Alamofire.request("\(GathrConfiguration.sharedInstance.BASE_URL()!)"+"video/videos/token/"+"\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)",headers:header)
             .validate()
             .responseJSON { (response) -> Void in
