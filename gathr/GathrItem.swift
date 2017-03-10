@@ -28,7 +28,7 @@ open class GathrItem:NSObject{
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]
         let url =   "\(GathrConfiguration.sharedInstance.BASE_URL()!)" + "item/items/token/" + "\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
-        Alamofire.request(url, headers: headers)
+        Alamofire.request(url, headers: header)
             .validate()
             .responseJSON { (response) -> Void in
                 self.item = [Item]()
