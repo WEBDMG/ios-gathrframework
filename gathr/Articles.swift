@@ -22,29 +22,19 @@ open class Articles {
         if data["excerpt"] != nil {
             self.excerpt = String(data["excerpt"] as! String)
         }
-        if data["featured_image.source"] != nil {
-            self.featuredImage = String(data["featured_image.source"] as! String)
+        if let featured_image = data["featured_image"] as? NSDictionary{
+            if featured_image["source"] != nil {
+                self.featuredImage = String(featured_image["source"] as! String)
+            }
         }
+        
         if data["link"] != nil{
             self.link = String(data["link"] as! String)
         }
         
     }
     
-    init(dictionary: NSDictionary){
-        if dictionary.value(forKey: "title") != nil {
-            self.title = dictionary.value(forKey: "title") as! String
-        }
-        if dictionary.value(forKey: "excerpt") != nil{
-            self.excerpt = dictionary.value(forKey: "excerpt") as! String
-        }
-        if dictionary.value(forKey: "source") != nil{
-            self.featuredImage = dictionary.value(forKey: "featured_image") as! String
-        }
-        if dictionary.value(forKey: "link") != nil{
-            self.link = dictionary.value(forKey: "link") as! String
-        }
-    }
+    
     
     open func toDictionary() -> NSDictionary {
         let newsDictionary = [
