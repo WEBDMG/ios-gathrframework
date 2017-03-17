@@ -23,6 +23,7 @@ open class Config:NSObject{
     public var playmeapptoken = ""
     public var playmeapptwitterurl = ""
     public var playmetoken = ""
+    public var playmefeatures = NSDictionary()
     
     public init?(response:NSDictionary) {
         self.blogurl = (((response.value(forKey: "config") as AnyObject).value(forKey: "blogurl") as AnyObject).object(at: 0)) as! String
@@ -39,6 +40,8 @@ open class Config:NSObject{
         self.playmeapptoken = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeapptoken") as AnyObject).object(at: 0)) as! String
         self.playmeapptwitterurl = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmeapptwitterurl") as AnyObject).object(at: 0)) as! String
         self.playmetoken = (((response.value(forKey: "config") as AnyObject).value(forKey: "playmetoken") as AnyObject).object(at: 0)) as! String
+        let two = response.value(forKey:"config") as! NSArray
+        self.playmefeatures = two.object(at: 1) as! NSDictionary
     }
     
     open func toDictionary() -> NSDictionary {
@@ -56,8 +59,9 @@ open class Config:NSObject{
             "playmeappstoreurl": self.playmeappstoreurl,
             "playmeapptoken": self.playmeapptoken,
             "playmeapptwitterurl": self.playmeapptwitterurl,
-            "playmetoken": self.playmetoken
-        ]
+            "playmetoken": self.playmetoken,
+            "playmefeatures": self.playmefeatures
+        ] as [String : Any]
         return configDictionary as NSDictionary
     }
 }
