@@ -29,14 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C20360E51E3862D3000FF773 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = /Users/kincade71/Xcode/gathrframework/gathr/Config.swift; sourceTree = "<absolute>"; };
-		C20360E71E3862D3000FF773 /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Articles.swift; path = /Users/kincade71/Xcode/gathrframework/gathr/Articles.swift; sourceTree = "<absolute>"; };
-		C20360E91E3862D3000FF773 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = /Users/kincade71/Xcode/gathrframework/gathr/Photo.swift; sourceTree = "<absolute>"; };
-		C20360EB1E3862D3000FF773 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Audio.swift; path = /Users/kincade71/Xcode/gathrframework/gathr/Audio.swift; sourceTree = "<absolute>"; };
-		C20360ED1E3862D3000FF773 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = /Users/kincade71/Xcode/gathrframework/gathr/Video.swift; sourceTree = "<absolute>"; };
-		C20360EF1E3862D3000FF773 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = /Users/kincade71/Xcode/gathrframework/gathr/Event.swift; sourceTree = "<absolute>"; };
-		C20360F11E3862D3000FF773 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = /Users/kincade71/Xcode/gathrframework/gathr/Item.swift; sourceTree = "<absolute>"; };
-		C20360F31E3862D3000FF773 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Text.swift; path = /Users/kincade71/Xcode/gathrframework/gathr/Text.swift; sourceTree = "<absolute>"; };
+		C20360E51E3862D3000FF773 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = gathr/Config.swift; sourceTree = SOURCE_ROOT; };
+		C20360E71E3862D3000FF773 /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Articles.swift; path = gathr/Articles.swift; sourceTree = SOURCE_ROOT; };
+		C20360E91E3862D3000FF773 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = gathr/Photo.swift; sourceTree = SOURCE_ROOT; };
+		C20360EB1E3862D3000FF773 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Audio.swift; path = gathr/Audio.swift; sourceTree = SOURCE_ROOT; };
+		C20360ED1E3862D3000FF773 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = gathr/Video.swift; sourceTree = SOURCE_ROOT; };
+		C20360EF1E3862D3000FF773 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = gathr/Event.swift; sourceTree = SOURCE_ROOT; };
+		C20360F11E3862D3000FF773 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = gathr/Item.swift; sourceTree = SOURCE_ROOT; };
+		C20360F31E3862D3000FF773 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Text.swift; path = gathr/Text.swift; sourceTree = SOURCE_ROOT; };
 		C203610B1E38638F000FF773 /* gathr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = gathr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C203610D1E38638F000FF773 /* gathr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gathr.h; sourceTree = "<group>"; };
 		C203610E1E38638F000FF773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
