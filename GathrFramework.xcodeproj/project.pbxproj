@@ -40,6 +40,7 @@
 		C203610B1E38638F000FF773 /* gathr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = gathr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C203610D1E38638F000FF773 /* gathr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gathr.h; sourceTree = "<group>"; };
 		C203610E1E38638F000FF773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C214FCB52107DDF400D97DA0 /* gathr.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gathr.podspec; sourceTree = SOURCE_ROOT; };
 		C21BEE7C1E3AF58400060888 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C2762D981E62842D00A87135 /* GathrArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrArticles.swift; path = Gathr/GathrArticles.swift; sourceTree = SOURCE_ROOT; };
 		C2762D991E62842D00A87135 /* GathrAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrAudio.swift; path = Gathr/GathrAudio.swift; sourceTree = SOURCE_ROOT; };
@@ -102,6 +103,7 @@
 				C2762DA01E62842D00A87135 /* GathrVideo.swift */,
 				C203610E1E38638F000FF773 /* Info.plist */,
 				C21BEE7C1E3AF58400060888 /* LICENSE */,
+				C214FCB52107DDF400D97DA0 /* gathr.podspec */,
 			);
 			name = Gathr;
 			path = gathr;

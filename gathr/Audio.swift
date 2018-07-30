@@ -20,6 +20,7 @@ open class Audio {
     public var artistName:String = String()
     public var facebook:String = String()
     public var twitter:String = String()
+    public var image:String = String()
     
     init(data: NSDictionary){
         if data["sidid"] != nil {
@@ -27,6 +28,9 @@ open class Audio {
         }
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
+        }
+        if data["image"] != nil {
+            self.image = String(data["image"] as! String)
         }
         if data["songs"] != nil {
             self.songs = String(data["songs"] as! String)
@@ -92,6 +96,9 @@ open class Audio {
         if dictionary.value(forKey: "twitter") != nil{
             self.twitter = dictionary.value(forKey: "twitter") as! String
         }
+        if dictionary.value(forKey: "image") != nil{
+            self.twitter = dictionary.value(forKey: "image") as! String
+        }
     }
     
     open func toDictionary() -> NSDictionary {
@@ -106,7 +113,8 @@ open class Audio {
             "source":self.source,
             "artistName":self.artistName,
             "facebook":self.facebook,
-            "twitter":self.twitter
+            "twitter":self.twitter,
+            "image":self.image
         ]
         return newsDictionary as NSDictionary
     }
