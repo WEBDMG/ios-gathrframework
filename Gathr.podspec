@@ -15,9 +15,10 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "Gathr"
-  s.version      = "3.0.5"
-  s.summary      = "Gathr Framework for interacting with Gathr."
+  s.name            = "Gathr"
+  s.version         = "3.2.0"
+  s.summary         = "Gathr Framework for interacting with Gathr."
+  s.swift_version   = "4.2"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
