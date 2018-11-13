@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 //! Project version number for gathr.
-FOUNDATION_EXPORT double gathrVersionNumber;
+FOUNDATION_EXPORT double GathrVersionNumber;
 
 //! Project version string for gathr.
-FOUNDATION_EXPORT const unsigned char gathrVersionString[];
+FOUNDATION_EXPORT const unsigned char GathrVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <gathr/PublicHeader.h>
 
