@@ -11,7 +11,7 @@ import Alamofire
 
 open class GathrConfig : NSObject{
     open var config: Config!
-    open static let sharedInstance = GathrConfig()
+    public static let sharedInstance = GathrConfig()
     
     override init() {
         super.init()

@@ -15,7 +15,7 @@ open class GathrEvent : NSObject{
     var event:[Event] = [Event]()
     
     //Create a singleton
-    open static let sharedInstance = GathrEvent()
+    public static let sharedInstance = GathrEvent()
     
     override init() {
         super.init()

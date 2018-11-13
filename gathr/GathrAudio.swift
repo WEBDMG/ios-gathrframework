@@ -14,7 +14,7 @@ open class GathrAudio : NSObject{
     
     var audio:[Audio] = [Audio]()
     
-    open static let sharedInstance = GathrAudio()
+    public static let sharedInstance = GathrAudio()
     
     override init() {
         super.init()

@@ -14,7 +14,7 @@ open class GathrArticles : NSObject{
     var articles:[Articles] = [Articles]()
     var config:Config!
     
-    open static let sharedInstance = GathrArticles()
+    public static let sharedInstance = GathrArticles()
     
     override init() {
         super.init()

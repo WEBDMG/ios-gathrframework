@@ -15,7 +15,7 @@ open class GathrVideo: NSObject{
     var video:[Video] = [Video]()
     
     //Create a singleton
-    open static let sharedInstance = GathrVideo()
+    public static let sharedInstance = GathrVideo()
     
     override init() {
         super.init()

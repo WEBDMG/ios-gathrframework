@@ -15,7 +15,7 @@ open class GathrPhotos : NSObject{
     var photos:[Photo] = [Photo]()
     
     //Create a singleton
-    open static let sharedInstance = GathrPhotos()
+    public static let sharedInstance = GathrPhotos()
     
     override init() {
         super.init()

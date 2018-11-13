@@ -15,7 +15,7 @@ open class GathrItem:NSObject{
     var item:[Item] = [Item]()
     
     //Create a singleton
-    open static let sharedInstance = GathrItem()
+    public static let sharedInstance = GathrItem()
     
     override init() {
         super.init()

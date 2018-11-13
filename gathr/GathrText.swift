@@ -15,7 +15,7 @@ open class GathrText: NSObject {
     var text:[Text] = [Text]()
     
     //Create a singleton
-    open static let sharedInstance = GathrText()
+    public static let sharedInstance = GathrText()
     override init() {
         super.init()
         self.getAllTexts({ (texts) in
