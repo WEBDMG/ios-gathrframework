@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		637D3235219B6C5B00FF33E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637D3234219B6C5B00FF33E7 /* Alamofire.framework */; };
 		637D3237219B6C6100FF33E7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637D3236219B6C6000FF33E7 /* SwiftyJSON.framework */; };
+		637D323F219B7A0300FF33E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 637D323E219B7A0300FF33E7 /* README.md */; };
 		C203610F1E38638F000FF773 /* gathr.h in Headers */ = {isa = PBXBuildFile; fileRef = C203610D1E38638F000FF773 /* gathr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C21BEE7D1E3AF58400060888 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C21BEE7C1E3AF58400060888 /* LICENSE */; };
 		C222BF9D1E3880EF00897FB7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360E51E3862D3000FF773 /* Config.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		637D3234219B6C5B00FF33E7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		637D3236219B6C6000FF33E7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		637D323E219B7A0300FF33E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C20360E51E3862D3000FF773 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = gathr/Config.swift; sourceTree = SOURCE_ROOT; };
 		C20360E71E3862D3000FF773 /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Articles.swift; path = gathr/Articles.swift; sourceTree = SOURCE_ROOT; };
 		C20360E91E3862D3000FF773 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = gathr/Photo.swift; sourceTree = SOURCE_ROOT; };
@@ -120,6 +122,7 @@
 				C203610E1E38638F000FF773 /* Info.plist */,
 				C21BEE7C1E3AF58400060888 /* LICENSE */,
 				C214FCB52107DDF400D97DA0 /* gathr.podspec */,
+				637D323E219B7A0300FF33E7 /* README.md */,
 			);
 			name = Gathr;
 			path = gathr;
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637D323F219B7A0300FF33E7 /* README.md in Resources */,
 				C21BEE7D1E3AF58400060888 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
