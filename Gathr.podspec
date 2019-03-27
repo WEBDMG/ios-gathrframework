@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   #
 
   s.name            = "Gathr"
-  s.version         = "3.2.0"
+  s.version         = "3.3.0"
   s.summary         = "Gathr Framework for interacting with Gathr."
-  s.swift_version   = "4.2"
+  s.swift_version   = "5.0"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "Alamofire", "~> 4.3"
-  s.dependency "SwiftyJSON","~>3.1"
+  s.dependency "Alamofire"
+  s.dependency "SwiftyJSON"
 
 end
