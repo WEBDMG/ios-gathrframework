@@ -13,7 +13,7 @@ open class Photo {
     public var url:String = String()
     public var source:String = String()
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
         }
@@ -26,7 +26,7 @@ open class Photo {
         
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "title") != nil {
             self.title = dictionary.value(forKey: "title") as! String
         }

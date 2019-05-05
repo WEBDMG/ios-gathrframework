@@ -17,7 +17,7 @@ open class Text {
     public var date:String = String()
     
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["textid"] != nil {
             self.textid = String(data["textid"] as! String)
         }
@@ -38,7 +38,7 @@ open class Text {
         }
     }
     
-    init(dictionary: NSDictionary){
+   public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "textid") != nil {
             self.textid = dictionary.value(forKey: "textid") as! String
         }

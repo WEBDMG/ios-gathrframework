@@ -19,7 +19,7 @@ open class Event{
     public var marketinglink:String = String()
     public var image:String = String()
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["eventid"] != nil {
             self.eventid = String(data["eventid"] as! String)
         }
@@ -49,7 +49,7 @@ open class Event{
         }
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "eventid") != nil {
             self.eventid = dictionary.value(forKey: "eventid") as! String
         }

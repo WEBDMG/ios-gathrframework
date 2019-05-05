@@ -15,7 +15,7 @@ open class Articles {
     public var featuredImage:String = String()
     public var link:String = String()
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
         }

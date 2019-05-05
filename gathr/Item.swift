@@ -18,7 +18,7 @@ open class Item{
     public var inventory:String = String()
     
     
-    init(data: NSDictionary){
+   public init(data: NSDictionary){
         if data["id"] != nil {
             self.id = String(data["id"] as! String)
         }
@@ -42,7 +42,7 @@ open class Item{
         }
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "id") != nil {
             self.id = dictionary.value(forKey: "id") as! String
         }

@@ -17,7 +17,7 @@ open class Video{
     public var type:String = String()
     
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["sidvid"] != nil {
             self.sidvid = String(data["sidvid"] as! String)
         }
@@ -39,7 +39,7 @@ open class Video{
         
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "sidvid") != nil {
             self.sidvid = dictionary.value(forKey: "sidvid") as! String
         }

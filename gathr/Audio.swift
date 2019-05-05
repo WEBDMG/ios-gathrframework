@@ -22,7 +22,7 @@ open class Audio {
     public var twitter:String = String()
     public var image:String = String()
     
-    init(data: NSDictionary){
+    public init(data: NSDictionary){
         if data["sidid"] != nil {
             self.sidid = String(data["sidid"] as! String)
         }
@@ -62,7 +62,7 @@ open class Audio {
         
     }
     
-    init(dictionary: NSDictionary){
+    public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "sidid") != nil {
             self.sidid = dictionary.value(forKey: "sidid") as! String
         }
