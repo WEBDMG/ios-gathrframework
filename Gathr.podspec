@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name            = "Gathr"
-  s.version         = "3.3.0"
+  s.version         = "3.3.1"
   s.summary         = "Gathr Framework for interacting with Gathr."
   s.swift_version   = "5.0"
 
