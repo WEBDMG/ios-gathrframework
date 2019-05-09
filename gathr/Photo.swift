@@ -12,6 +12,7 @@ open class Photo {
     public var title:String = String()
     public var url:String = String()
     public var source:String = String()
+    public var active:Bool?
     
     public init(data: NSDictionary){
         if data["title"] != nil {
@@ -23,8 +24,11 @@ open class Photo {
         if data["source"] != nil {
             self.source = String(data["source"] as! String)
         }
-        
+        if data["active"] != nil {
+            self.active = String(data["active"] as! String).boolValue
+        }
     }
+        
     
     public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "title") != nil {
@@ -36,15 +40,27 @@ open class Photo {
         if dictionary.value(forKey: "source") != nil{
             self.source = dictionary.value(forKey: "source") as! String
         }
-        
+        if dictionary.value(forKey: "active") != nil{
+            let active = dictionary.value(forKey: "active") as! String
+            self.active = active.boolValue
+        }
     }
+        
+
     
     open func toDictionary() -> NSDictionary {
         let photosDictionary = [
             "title":self.title,
             "excerpt":self.url,
             "source":self.source,
-            ]
+            "active":self.active!
+            ] as [String : Any]
         return photosDictionary as NSDictionary
+    }
+}
+
+extension String {
+    var boolValue: Bool {
+        return NSString(string: self).boolValue
     }
 }
