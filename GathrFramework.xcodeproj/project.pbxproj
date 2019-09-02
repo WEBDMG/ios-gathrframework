@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		637D323F219B7A0300FF33E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 637D323E219B7A0300FF33E7 /* README.md */; };
-		637FDD26224BD34B00316C08 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637FDD24224BD34B00316C08 /* Alamofire.framework */; };
-		637FDD27224BD34C00316C08 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637FDD25224BD34B00316C08 /* SwiftyJSON.framework */; };
+		639D97B0231DC8F100057F89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97AF231DC8F100057F89 /* Alamofire */; };
+		639D97B3231DC97900057F89 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97B2231DC97900057F89 /* SwiftyJSON */; };
 		C203610F1E38638F000FF773 /* Gathr.h in Headers */ = {isa = PBXBuildFile; fileRef = C203610D1E38638F000FF773 /* Gathr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C21BEE7D1E3AF58400060888 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C21BEE7C1E3AF58400060888 /* LICENSE */; };
 		C222BF9D1E3880EF00897FB7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360E51E3862D3000FF773 /* Config.swift */; };
@@ -64,8 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				637FDD26224BD34B00316C08 /* Alamofire.framework in Frameworks */,
-				637FDD27224BD34C00316C08 /* SwiftyJSON.framework in Frameworks */,
+				639D97B3231DC97900057F89 /* SwiftyJSON in Frameworks */,
+				639D97B0231DC8F100057F89 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +156,10 @@
 			dependencies = (
 			);
 			name = Gathr;
+			packageProductDependencies = (
+				639D97AF231DC8F100057F89 /* Alamofire */,
+				639D97B2231DC97900057F89 /* SwiftyJSON */,
+			);
 			productName = gathr;
 			productReference = C203610B1E38638F000FF773 /* Gathr.framework */;
 			productType = "com.apple.product-type.framework";
@@ -187,6 +191,10 @@
 				Base,
 			);
 			mainGroup = C20360C61E3862A3000FF773;
+			packageReferences = (
+				639D97AE231DC8F100057F89 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				639D97B1231DC97900057F89 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = C20360D01E3862A3000FF773 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -285,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -337,10 +345,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -362,7 +371,11 @@
 				);
 				INFOPLIST_FILE = gathr/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WEBDMG.gathr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -389,7 +402,11 @@
 				);
 				INFOPLIST_FILE = gathr/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WEBDMG.gathr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -422,6 +439,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		639D97AE231DC8F100057F89 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.2;
+			};
+		};
+		639D97B1231DC97900057F89 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		639D97AF231DC8F100057F89 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 639D97AE231DC8F100057F89 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		639D97B2231DC97900057F89 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 639D97B1231DC97900057F89 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C20360C71E3862A3000FF773 /* Project object */;
 }
