@@ -51,7 +51,7 @@
 		C203610D1E38638F000FF773 /* Gathr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gathr.h; sourceTree = "<group>"; };
 		C203610E1E38638F000FF773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C214FCB52107DDF400D97DA0 /* Gathr.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gathr.podspec; sourceTree = SOURCE_ROOT; };
-		C21BEE7C1E3AF58400060888 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C21BEE7C1E3AF58400060888 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = gathr/LICENSE; sourceTree = "<group>"; };
 		C2762D981E62842D00A87135 /* GathrArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrArticles.swift; path = gathr/Sources/Gathr/GathrArticles.swift; sourceTree = SOURCE_ROOT; };
 		C2762D991E62842D00A87135 /* GathrAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrAudio.swift; path = gathr/Sources/Gathr/GathrAudio.swift; sourceTree = SOURCE_ROOT; };
 		C2762D9A1E62842D00A87135 /* GathrConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrConfig.swift; path = gathr/Sources/Gathr/GathrConfig.swift; sourceTree = SOURCE_ROOT; };
@@ -121,7 +121,13 @@
 		C20360C61E3862A3000FF773 = {
 			isa = PBXGroup;
 			children = (
-				C203610C1E38638F000FF773 /* Gathr */,
+				639D97DE231E055800057F89 /* Package.swift */,
+				639D97E2231E057A00057F89 /* Sources */,
+				639D97E0231E056C00057F89 /* Tests */,
+				C203610E1E38638F000FF773 /* Info.plist */,
+				C21BEE7C1E3AF58400060888 /* LICENSE */,
+				C214FCB52107DDF400D97DA0 /* Gathr.podspec */,
+				637D323E219B7A0300FF33E7 /* README.md */,
 				C20360D01E3862A3000FF773 /* Products */,
 				637D3233219B6C5B00FF33E7 /* Frameworks */,
 			);
@@ -134,21 +140,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		C203610C1E38638F000FF773 /* Gathr */ = {
-			isa = PBXGroup;
-			children = (
-				639D97DE231E055800057F89 /* Package.swift */,
-				639D97E2231E057A00057F89 /* Sources */,
-				639D97E0231E056C00057F89 /* Tests */,
-				C203610E1E38638F000FF773 /* Info.plist */,
-				C21BEE7C1E3AF58400060888 /* LICENSE */,
-				C214FCB52107DDF400D97DA0 /* Gathr.podspec */,
-				637D323E219B7A0300FF33E7 /* README.md */,
-			);
-			name = Gathr;
-			path = gathr;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
