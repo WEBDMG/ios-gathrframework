@@ -1,0 +1,915 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Articles.swift",
+      "line": 12,
+      "symbol": "Articles",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Articles.swift",
+      "line": 13,
+      "symbol": "Articles.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Articles.swift",
+      "line": 14,
+      "symbol": "Articles.excerpt",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Articles.swift",
+      "line": 15,
+      "symbol": "Articles.featuredImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Articles.swift",
+      "line": 16,
+      "symbol": "Articles.link",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Articles.swift",
+      "line": 18,
+      "symbol": "Articles.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Articles.swift",
+      "line": 39,
+      "symbol": "Articles.toDictionary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 11,
+      "symbol": "Audio",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 12,
+      "symbol": "Audio.sidid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 13,
+      "symbol": "Audio.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 14,
+      "symbol": "Audio.songs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 15,
+      "symbol": "Audio.video",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 16,
+      "symbol": "Audio.link",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 17,
+      "symbol": "Audio.aboutTrack",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 18,
+      "symbol": "Audio.writtenBy",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 19,
+      "symbol": "Audio.source",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 20,
+      "symbol": "Audio.artistName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 21,
+      "symbol": "Audio.facebook",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 22,
+      "symbol": "Audio.twitter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 23,
+      "symbol": "Audio.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 25,
+      "symbol": "Audio.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 65,
+      "symbol": "Audio.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Audio.swift",
+      "line": 104,
+      "symbol": "Audio.toDictionary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 11,
+      "symbol": "Config",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 12,
+      "symbol": "Config.blogurl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 13,
+      "symbol": "Config.playmeappappleid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 14,
+      "symbol": "Config.playmeappfacebookurl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 15,
+      "symbol": "Config.playmeapphomeurl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 16,
+      "symbol": "Config.playmeappid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 17,
+      "symbol": "Config.playmeappinstagramurl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 18,
+      "symbol": "Config.playmeappkeywords",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 19,
+      "symbol": "Config.playmeapplandingpageactive",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 20,
+      "symbol": "Config.playmeappname",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 21,
+      "symbol": "Config.playmeappnameformatted",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 22,
+      "symbol": "Config.playmeappstoreurl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 23,
+      "symbol": "Config.playmeapptoken",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 24,
+      "symbol": "Config.playmeapptwitterurl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 25,
+      "symbol": "Config.playmetoken",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 26,
+      "symbol": "Config.playmefeatures",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 28,
+      "symbol": "Config.init(response:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Config.swift",
+      "line": 47,
+      "symbol": "Config.toDictionary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 11,
+      "symbol": "Event",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 12,
+      "symbol": "Event.eventid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 13,
+      "symbol": "Event.venuename",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 14,
+      "symbol": "Event.address",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 15,
+      "symbol": "Event.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 16,
+      "symbol": "Event.time",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 17,
+      "symbol": "Event.notes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 18,
+      "symbol": "Event.ticketlink",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 19,
+      "symbol": "Event.marketinglink",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 20,
+      "symbol": "Event.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 22,
+      "symbol": "Event.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 52,
+      "symbol": "Event.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Event.swift",
+      "line": 82,
+      "symbol": "Event.toDictionary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrArticles.swift",
+      "line": 13,
+      "symbol": "GathrArticles",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrArticles.swift",
+      "line": 17,
+      "symbol": "GathrArticles.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrArticles.swift",
+      "line": 30,
+      "symbol": "GathrArticles.getAllArticles(_:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrAudio.swift",
+      "line": 13,
+      "symbol": "GathrAudio",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrAudio.swift",
+      "line": 17,
+      "symbol": "GathrAudio.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrAudio.swift",
+      "line": 26,
+      "symbol": "GathrAudio.getAllSongs(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfig.swift",
+      "line": 12,
+      "symbol": "GathrConfig",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfig.swift",
+      "line": 13,
+      "symbol": "GathrConfig.config",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfig.swift",
+      "line": 14,
+      "symbol": "GathrConfig.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 11,
+      "symbol": "GathrConfiguration",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 13,
+      "symbol": "GathrConfiguration.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 15,
+      "symbol": "GathrConfiguration.Key",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 16,
+      "symbol": "GathrConfiguration.Key.TOKEN",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 17,
+      "symbol": "GathrConfiguration.Key.BASE_URL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 18,
+      "symbol": "GathrConfiguration.Key.PLAYMEAPPTOKEN",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 19,
+      "symbol": "GathrConfiguration.Key.API_KEY",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 22,
+      "symbol": "GathrConfiguration.configDictionary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 24,
+      "symbol": "GathrConfiguration.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 32,
+      "symbol": "GathrConfiguration.TOKEN()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 35,
+      "symbol": "GathrConfiguration.BASE_URL()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 44,
+      "symbol": "GathrConfiguration.PLAYMEAPPTOKEN()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrConfiguration.swift",
+      "line": 47,
+      "symbol": "GathrConfiguration.APIKEY()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrEvent.swift",
+      "line": 13,
+      "symbol": "GathrEvent",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrEvent.swift",
+      "line": 18,
+      "symbol": "GathrEvent.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrEvent.swift",
+      "line": 27,
+      "symbol": "GathrEvent.getAllEvents(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrItem.swift",
+      "line": 13,
+      "symbol": "GathrItem",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrItem.swift",
+      "line": 18,
+      "symbol": "GathrItem.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrItem.swift",
+      "line": 27,
+      "symbol": "GathrItem.getAllItems(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrPhotos.swift",
+      "line": 13,
+      "symbol": "GathrPhotos",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrPhotos.swift",
+      "line": 18,
+      "symbol": "GathrPhotos.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrPhotos.swift",
+      "line": 27,
+      "symbol": "GathrPhotos.getAllPhotos(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrText.swift",
+      "line": 13,
+      "symbol": "GathrText",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrText.swift",
+      "line": 18,
+      "symbol": "GathrText.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrText.swift",
+      "line": 25,
+      "symbol": "GathrText.getAllTexts(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrVideo.swift",
+      "line": 13,
+      "symbol": "GathrVideo",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrVideo.swift",
+      "line": 18,
+      "symbol": "GathrVideo.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/GathrVideo.swift",
+      "line": 27,
+      "symbol": "GathrVideo.getAllVideos(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 11,
+      "symbol": "Item",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 12,
+      "symbol": "Item.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 13,
+      "symbol": "Item.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 14,
+      "symbol": "Item.desc",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 15,
+      "symbol": "Item.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 16,
+      "symbol": "Item.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 17,
+      "symbol": "Item.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 18,
+      "symbol": "Item.inventory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 21,
+      "symbol": "Item.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 45,
+      "symbol": "Item.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Item.swift",
+      "line": 69,
+      "symbol": "Item.toDictionary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Photo.swift",
+      "line": 11,
+      "symbol": "Photo",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Photo.swift",
+      "line": 12,
+      "symbol": "Photo.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Photo.swift",
+      "line": 13,
+      "symbol": "Photo.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Photo.swift",
+      "line": 14,
+      "symbol": "Photo.source",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Photo.swift",
+      "line": 15,
+      "symbol": "Photo.active",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Photo.swift",
+      "line": 17,
+      "symbol": "Photo.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Photo.swift",
+      "line": 33,
+      "symbol": "Photo.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Photo.swift",
+      "line": 51,
+      "symbol": "Photo.toDictionary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 11,
+      "symbol": "Text",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 12,
+      "symbol": "Text.textid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 13,
+      "symbol": "Text.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 14,
+      "symbol": "Text.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 15,
+      "symbol": "Text.author",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 16,
+      "symbol": "Text.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 17,
+      "symbol": "Text.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 20,
+      "symbol": "Text.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 41,
+      "symbol": "Text.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Text.swift",
+      "line": 63,
+      "symbol": "Text.toDictionary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 11,
+      "symbol": "Video",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 12,
+      "symbol": "Video.sidvid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 13,
+      "symbol": "Video.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 14,
+      "symbol": "Video.video",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 15,
+      "symbol": "Video.videoM",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 16,
+      "symbol": "Video.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 17,
+      "symbol": "Video.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 20,
+      "symbol": "Video.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 42,
+      "symbol": "Video.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/koats/Xcode/ios-gathrframework/Sources/Gathr/Video.swift",
+      "line": 63,
+      "symbol": "Video.toDictionary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/koats/Xcode/ios-gathrframework"
+}

@@ -12,25 +12,24 @@
 		639D97B3231DC97900057F89 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97B2231DC97900057F89 /* SwiftyJSON */; };
 		639D97DF231E055800057F89 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D97DE231E055800057F89 /* Package.swift */; };
 		639D97E1231E056C00057F89 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 639D97E0231E056C00057F89 /* Tests */; };
-		C203610F1E38638F000FF773 /* Gathr.h in Headers */ = {isa = PBXBuildFile; fileRef = C203610D1E38638F000FF773 /* Gathr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C21BEE7D1E3AF58400060888 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C21BEE7C1E3AF58400060888 /* LICENSE */; };
-		C222BF9D1E3880EF00897FB7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360E51E3862D3000FF773 /* Config.swift */; };
-		C222BF9F1E3880EF00897FB7 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360E71E3862D3000FF773 /* Articles.swift */; };
-		C222BFA11E3880EF00897FB7 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360E91E3862D3000FF773 /* Photo.swift */; };
-		C222BFA31E3880EF00897FB7 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360EB1E3862D3000FF773 /* Audio.swift */; };
-		C222BFA51E3880EF00897FB7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360ED1E3862D3000FF773 /* Video.swift */; };
-		C222BFA71E3880EF00897FB7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360EF1E3862D3000FF773 /* Event.swift */; };
-		C222BFA91E3880EF00897FB7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360F11E3862D3000FF773 /* Item.swift */; };
-		C222BFAB1E3880EF00897FB7 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20360F31E3862D3000FF773 /* Text.swift */; };
-		C2762DA11E62842D00A87135 /* GathrArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762D981E62842D00A87135 /* GathrArticles.swift */; };
-		C2762DA21E62842D00A87135 /* GathrAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762D991E62842D00A87135 /* GathrAudio.swift */; };
-		C2762DA31E62842D00A87135 /* GathrConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762D9A1E62842D00A87135 /* GathrConfig.swift */; };
-		C2762DA41E62842D00A87135 /* GathrConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762D9B1E62842D00A87135 /* GathrConfiguration.swift */; };
-		C2762DA51E62842D00A87135 /* GathrEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762D9C1E62842D00A87135 /* GathrEvent.swift */; };
-		C2762DA61E62842D00A87135 /* GathrItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762D9D1E62842D00A87135 /* GathrItem.swift */; };
-		C2762DA71E62842D00A87135 /* GathrPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762D9E1E62842D00A87135 /* GathrPhotos.swift */; };
-		C2762DA81E62842D00A87135 /* GathrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762D9F1E62842D00A87135 /* GathrText.swift */; };
-		C2762DA91E62842D00A87135 /* GathrVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2762DA01E62842D00A87135 /* GathrVideo.swift */; };
+		63D4FB8523BEE4C8009C032B /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7323BEE4C5009C032B /* Articles.swift */; };
+		63D4FB8623BEE4C8009C032B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7423BEE4C5009C032B /* Config.swift */; };
+		63D4FB8723BEE4C8009C032B /* Gathr.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D4FB7523BEE4C6009C032B /* Gathr.h */; };
+		63D4FB8823BEE4C8009C032B /* GathrItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7623BEE4C6009C032B /* GathrItem.swift */; };
+		63D4FB8923BEE4C8009C032B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7723BEE4C6009C032B /* Video.swift */; };
+		63D4FB8A23BEE4C8009C032B /* GathrVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7823BEE4C6009C032B /* GathrVideo.swift */; };
+		63D4FB8B23BEE4C8009C032B /* GathrArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7923BEE4C6009C032B /* GathrArticles.swift */; };
+		63D4FB8C23BEE4C8009C032B /* GathrConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7A23BEE4C6009C032B /* GathrConfig.swift */; };
+		63D4FB8D23BEE4C8009C032B /* GathrPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7B23BEE4C7009C032B /* GathrPhotos.swift */; };
+		63D4FB8E23BEE4C8009C032B /* GathrEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7C23BEE4C7009C032B /* GathrEvent.swift */; };
+		63D4FB8F23BEE4C8009C032B /* GathrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7D23BEE4C7009C032B /* GathrText.swift */; };
+		63D4FB9023BEE4C8009C032B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7E23BEE4C7009C032B /* Event.swift */; };
+		63D4FB9123BEE4C8009C032B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7F23BEE4C7009C032B /* Photo.swift */; };
+		63D4FB9223BEE4C8009C032B /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8023BEE4C7009C032B /* Audio.swift */; };
+		63D4FB9323BEE4C8009C032B /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8123BEE4C8009C032B /* Text.swift */; };
+		63D4FB9423BEE4C8009C032B /* GathrConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8223BEE4C8009C032B /* GathrConfiguration.swift */; };
+		63D4FB9523BEE4C8009C032B /* GathrAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8323BEE4C8009C032B /* GathrAudio.swift */; };
+		63D4FB9623BEE4C8009C032B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8423BEE4C8009C032B /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,28 +38,27 @@
 		637FDD25224BD34B00316C08 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		639D97DE231E055800057F89 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		639D97E0231E056C00057F89 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
-		C20360E51E3862D3000FF773 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = gathr/Sources/Gathr/Config.swift; sourceTree = SOURCE_ROOT; };
-		C20360E71E3862D3000FF773 /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Articles.swift; path = gathr/Sources/Gathr/Articles.swift; sourceTree = SOURCE_ROOT; };
-		C20360E91E3862D3000FF773 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = gathr/Sources/Gathr/Photo.swift; sourceTree = SOURCE_ROOT; };
-		C20360EB1E3862D3000FF773 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Audio.swift; path = gathr/Sources/Gathr/Audio.swift; sourceTree = SOURCE_ROOT; };
-		C20360ED1E3862D3000FF773 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = gathr/Sources/Gathr/Video.swift; sourceTree = SOURCE_ROOT; };
-		C20360EF1E3862D3000FF773 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = gathr/Sources/Gathr/Event.swift; sourceTree = SOURCE_ROOT; };
-		C20360F11E3862D3000FF773 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = gathr/Sources/Gathr/Item.swift; sourceTree = SOURCE_ROOT; };
-		C20360F31E3862D3000FF773 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Text.swift; path = gathr/Sources/Gathr/Text.swift; sourceTree = SOURCE_ROOT; };
+		63D4FB7323BEE4C5009C032B /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		63D4FB7423BEE4C5009C032B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		63D4FB7523BEE4C6009C032B /* Gathr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gathr.h; sourceTree = "<group>"; };
+		63D4FB7623BEE4C6009C032B /* GathrItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrItem.swift; sourceTree = "<group>"; };
+		63D4FB7723BEE4C6009C032B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		63D4FB7823BEE4C6009C032B /* GathrVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrVideo.swift; sourceTree = "<group>"; };
+		63D4FB7923BEE4C6009C032B /* GathrArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrArticles.swift; sourceTree = "<group>"; };
+		63D4FB7A23BEE4C6009C032B /* GathrConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrConfig.swift; sourceTree = "<group>"; };
+		63D4FB7B23BEE4C7009C032B /* GathrPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrPhotos.swift; sourceTree = "<group>"; };
+		63D4FB7C23BEE4C7009C032B /* GathrEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrEvent.swift; sourceTree = "<group>"; };
+		63D4FB7D23BEE4C7009C032B /* GathrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrText.swift; sourceTree = "<group>"; };
+		63D4FB7E23BEE4C7009C032B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		63D4FB7F23BEE4C7009C032B /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		63D4FB8023BEE4C7009C032B /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		63D4FB8123BEE4C8009C032B /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		63D4FB8223BEE4C8009C032B /* GathrConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrConfiguration.swift; sourceTree = "<group>"; };
+		63D4FB8323BEE4C8009C032B /* GathrAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrAudio.swift; sourceTree = "<group>"; };
+		63D4FB8423BEE4C8009C032B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C203610B1E38638F000FF773 /* Gathr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gathr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C203610D1E38638F000FF773 /* Gathr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gathr.h; sourceTree = "<group>"; };
 		C203610E1E38638F000FF773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C214FCB52107DDF400D97DA0 /* Gathr.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gathr.podspec; sourceTree = SOURCE_ROOT; };
-		C21BEE7C1E3AF58400060888 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = gathr/LICENSE; sourceTree = "<group>"; };
-		C2762D981E62842D00A87135 /* GathrArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrArticles.swift; path = gathr/Sources/Gathr/GathrArticles.swift; sourceTree = SOURCE_ROOT; };
-		C2762D991E62842D00A87135 /* GathrAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrAudio.swift; path = gathr/Sources/Gathr/GathrAudio.swift; sourceTree = SOURCE_ROOT; };
-		C2762D9A1E62842D00A87135 /* GathrConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrConfig.swift; path = gathr/Sources/Gathr/GathrConfig.swift; sourceTree = SOURCE_ROOT; };
-		C2762D9B1E62842D00A87135 /* GathrConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrConfiguration.swift; path = gathr/Sources/Gathr/GathrConfiguration.swift; sourceTree = SOURCE_ROOT; };
-		C2762D9C1E62842D00A87135 /* GathrEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrEvent.swift; path = gathr/Sources/Gathr/GathrEvent.swift; sourceTree = SOURCE_ROOT; };
-		C2762D9D1E62842D00A87135 /* GathrItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrItem.swift; path = gathr/Sources/Gathr/GathrItem.swift; sourceTree = SOURCE_ROOT; };
-		C2762D9E1E62842D00A87135 /* GathrPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrPhotos.swift; path = gathr/Sources/Gathr/GathrPhotos.swift; sourceTree = SOURCE_ROOT; };
-		C2762D9F1E62842D00A87135 /* GathrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrText.swift; path = gathr/Sources/Gathr/GathrText.swift; sourceTree = SOURCE_ROOT; };
-		C2762DA01E62842D00A87135 /* GathrVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GathrVideo.swift; path = gathr/Sources/Gathr/GathrVideo.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,24 +94,24 @@
 		639D97E3231E05C800057F89 /* Gathr */ = {
 			isa = PBXGroup;
 			children = (
-				C203610D1E38638F000FF773 /* Gathr.h */,
-				C20360E51E3862D3000FF773 /* Config.swift */,
-				C20360E71E3862D3000FF773 /* Articles.swift */,
-				C20360E91E3862D3000FF773 /* Photo.swift */,
-				C20360EB1E3862D3000FF773 /* Audio.swift */,
-				C20360ED1E3862D3000FF773 /* Video.swift */,
-				C20360EF1E3862D3000FF773 /* Event.swift */,
-				C20360F11E3862D3000FF773 /* Item.swift */,
-				C20360F31E3862D3000FF773 /* Text.swift */,
-				C2762D981E62842D00A87135 /* GathrArticles.swift */,
-				C2762D991E62842D00A87135 /* GathrAudio.swift */,
-				C2762D9A1E62842D00A87135 /* GathrConfig.swift */,
-				C2762D9B1E62842D00A87135 /* GathrConfiguration.swift */,
-				C2762D9C1E62842D00A87135 /* GathrEvent.swift */,
-				C2762D9D1E62842D00A87135 /* GathrItem.swift */,
-				C2762D9E1E62842D00A87135 /* GathrPhotos.swift */,
-				C2762D9F1E62842D00A87135 /* GathrText.swift */,
-				C2762DA01E62842D00A87135 /* GathrVideo.swift */,
+				63D4FB7323BEE4C5009C032B /* Articles.swift */,
+				63D4FB8023BEE4C7009C032B /* Audio.swift */,
+				63D4FB7423BEE4C5009C032B /* Config.swift */,
+				63D4FB7E23BEE4C7009C032B /* Event.swift */,
+				63D4FB7523BEE4C6009C032B /* Gathr.h */,
+				63D4FB7923BEE4C6009C032B /* GathrArticles.swift */,
+				63D4FB8323BEE4C8009C032B /* GathrAudio.swift */,
+				63D4FB7A23BEE4C6009C032B /* GathrConfig.swift */,
+				63D4FB8223BEE4C8009C032B /* GathrConfiguration.swift */,
+				63D4FB7C23BEE4C7009C032B /* GathrEvent.swift */,
+				63D4FB7623BEE4C6009C032B /* GathrItem.swift */,
+				63D4FB7B23BEE4C7009C032B /* GathrPhotos.swift */,
+				63D4FB7D23BEE4C7009C032B /* GathrText.swift */,
+				63D4FB7823BEE4C6009C032B /* GathrVideo.swift */,
+				63D4FB8423BEE4C8009C032B /* Item.swift */,
+				63D4FB7F23BEE4C7009C032B /* Photo.swift */,
+				63D4FB8123BEE4C8009C032B /* Text.swift */,
+				63D4FB7723BEE4C6009C032B /* Video.swift */,
 			);
 			path = Gathr;
 			sourceTree = "<group>";
@@ -125,7 +123,6 @@
 				639D97E2231E057A00057F89 /* Sources */,
 				639D97E0231E056C00057F89 /* Tests */,
 				C203610E1E38638F000FF773 /* Info.plist */,
-				C21BEE7C1E3AF58400060888 /* LICENSE */,
 				C214FCB52107DDF400D97DA0 /* Gathr.podspec */,
 				637D323E219B7A0300FF33E7 /* README.md */,
 				C20360D01E3862A3000FF773 /* Products */,
@@ -148,7 +145,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C203610F1E38638F000FF773 /* Gathr.h in Headers */,
+				63D4FB8723BEE4C8009C032B /* Gathr.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +221,6 @@
 			files = (
 				639D97E1231E056C00057F89 /* Tests in Resources */,
 				637D323F219B7A0300FF33E7 /* README.md in Resources */,
-				C21BEE7D1E3AF58400060888 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,24 +231,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2762DA31E62842D00A87135 /* GathrConfig.swift in Sources */,
-				C2762DA91E62842D00A87135 /* GathrVideo.swift in Sources */,
-				C2762DA41E62842D00A87135 /* GathrConfiguration.swift in Sources */,
-				C2762DA51E62842D00A87135 /* GathrEvent.swift in Sources */,
-				C222BFA31E3880EF00897FB7 /* Audio.swift in Sources */,
-				C2762DA61E62842D00A87135 /* GathrItem.swift in Sources */,
-				C222BFA11E3880EF00897FB7 /* Photo.swift in Sources */,
-				C222BFA91E3880EF00897FB7 /* Item.swift in Sources */,
-				C222BF9F1E3880EF00897FB7 /* Articles.swift in Sources */,
-				C222BFA71E3880EF00897FB7 /* Event.swift in Sources */,
-				C2762DA71E62842D00A87135 /* GathrPhotos.swift in Sources */,
-				C222BFAB1E3880EF00897FB7 /* Text.swift in Sources */,
+				63D4FB8C23BEE4C8009C032B /* GathrConfig.swift in Sources */,
+				63D4FB8F23BEE4C8009C032B /* GathrText.swift in Sources */,
+				63D4FB8923BEE4C8009C032B /* Video.swift in Sources */,
+				63D4FB9323BEE4C8009C032B /* Text.swift in Sources */,
+				63D4FB9523BEE4C8009C032B /* GathrAudio.swift in Sources */,
+				63D4FB8B23BEE4C8009C032B /* GathrArticles.swift in Sources */,
+				63D4FB9423BEE4C8009C032B /* GathrConfiguration.swift in Sources */,
 				639D97DF231E055800057F89 /* Package.swift in Sources */,
-				C222BF9D1E3880EF00897FB7 /* Config.swift in Sources */,
-				C2762DA21E62842D00A87135 /* GathrAudio.swift in Sources */,
-				C2762DA81E62842D00A87135 /* GathrText.swift in Sources */,
-				C222BFA51E3880EF00897FB7 /* Video.swift in Sources */,
-				C2762DA11E62842D00A87135 /* GathrArticles.swift in Sources */,
+				63D4FB8D23BEE4C8009C032B /* GathrPhotos.swift in Sources */,
+				63D4FB9223BEE4C8009C032B /* Audio.swift in Sources */,
+				63D4FB9023BEE4C8009C032B /* Event.swift in Sources */,
+				63D4FB9623BEE4C8009C032B /* Item.swift in Sources */,
+				63D4FB8523BEE4C8009C032B /* Articles.swift in Sources */,
+				63D4FB8623BEE4C8009C032B /* Config.swift in Sources */,
+				63D4FB9123BEE4C8009C032B /* Photo.swift in Sources */,
+				63D4FB8823BEE4C8009C032B /* GathrItem.swift in Sources */,
+				63D4FB8A23BEE4C8009C032B /* GathrVideo.swift in Sources */,
+				63D4FB8E23BEE4C8009C032B /* GathrEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +380,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = gathr/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,7 +411,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = gathr/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
