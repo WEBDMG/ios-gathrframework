@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 open class GathrArticles : NSObject{
-    var articles:[Articles] = [Articles]()
+    public var articles:[Articles] = [Articles]()
     var config:Config!
     
     public static let sharedInstance = GathrArticles()

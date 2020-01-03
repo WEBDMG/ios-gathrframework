@@ -12,7 +12,7 @@ import SwiftyJSON
 
 open class GathrText: NSObject {
     
-    var text:[Text] = [Text]()
+    public var text:[Text] = [Text]()
     
     //Create a singleton
     public static let sharedInstance = GathrText()

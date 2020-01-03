@@ -12,7 +12,7 @@ import SwiftyJSON
 
 open class GathrItem:NSObject{
     
-    var item:[Item] = [Item]()
+    public var item:[Item] = [Item]()
     
     //Create a singleton
     public static let sharedInstance = GathrItem()

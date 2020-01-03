@@ -12,7 +12,7 @@ import SwiftyJSON
 
 open class GathrEvent : NSObject{
     
-    var event:[Event] = [Event]()
+    public var event:[Event] = [Event]()
     
     //Create a singleton
     public static let sharedInstance = GathrEvent()

@@ -12,7 +12,7 @@ import SwiftyJSON
 
 open class GathrAudio : NSObject{
     
-    var audio:[Audio] = [Audio]()
+    public var audio:[Audio] = [Audio]()
     
     public static let sharedInstance = GathrAudio()
     

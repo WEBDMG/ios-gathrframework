@@ -12,7 +12,7 @@ import SwiftyJSON
 
 open class GathrVideo: NSObject{
     
-    var video:[Video] = [Video]()
+    public var video:[Video] = [Video]()
     
     //Create a singleton
     public static let sharedInstance = GathrVideo()

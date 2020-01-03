@@ -12,7 +12,7 @@ import SwiftyJSON
 
 open class GathrPhotos : NSObject{
     
-    var photos:[Photo] = [Photo]()
+    public var photos:[Photo] = [Photo]()
     
     //Create a singleton
     public static let sharedInstance = GathrPhotos()
