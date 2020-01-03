@@ -10,7 +10,6 @@
 		637D323F219B7A0300FF33E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 637D323E219B7A0300FF33E7 /* README.md */; };
 		639D97B0231DC8F100057F89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97AF231DC8F100057F89 /* Alamofire */; };
 		639D97B3231DC97900057F89 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97B2231DC97900057F89 /* SwiftyJSON */; };
-		639D97DF231E055800057F89 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D97DE231E055800057F89 /* Package.swift */; };
 		639D97E1231E056C00057F89 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 639D97E0231E056C00057F89 /* Tests */; };
 		63D4FB8523BEE4C8009C032B /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7323BEE4C5009C032B /* Articles.swift */; };
 		63D4FB8623BEE4C8009C032B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7423BEE4C5009C032B /* Config.swift */; };
@@ -36,7 +35,6 @@
 		637D323E219B7A0300FF33E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		637FDD24224BD34B00316C08 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		637FDD25224BD34B00316C08 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		639D97DE231E055800057F89 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		639D97E0231E056C00057F89 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		63D4FB7323BEE4C5009C032B /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		63D4FB7423BEE4C5009C032B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		C20360C61E3862A3000FF773 = {
 			isa = PBXGroup;
 			children = (
-				639D97DE231E055800057F89 /* Package.swift */,
 				639D97E2231E057A00057F89 /* Sources */,
 				639D97E0231E056C00057F89 /* Tests */,
 				C203610E1E38638F000FF773 /* Info.plist */,
@@ -238,7 +235,6 @@
 				63D4FB9523BEE4C8009C032B /* GathrAudio.swift in Sources */,
 				63D4FB8B23BEE4C8009C032B /* GathrArticles.swift in Sources */,
 				63D4FB9423BEE4C8009C032B /* GathrConfiguration.swift in Sources */,
-				639D97DF231E055800057F89 /* Package.swift in Sources */,
 				63D4FB8D23BEE4C8009C032B /* GathrPhotos.swift in Sources */,
 				63D4FB9223BEE4C8009C032B /* Audio.swift in Sources */,
 				63D4FB9023BEE4C8009C032B /* Event.swift in Sources */,
@@ -376,10 +372,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +380,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.WEBDMG.gathr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -407,10 +401,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -418,6 +409,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.WEBDMG.gathr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
