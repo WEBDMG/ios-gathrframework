@@ -17,7 +17,7 @@ open class GathrEvent : NSObject{
     //Create a singleton
     public static let sharedInstance = GathrEvent()
     
-    override init() {
+    public override init() {
         super.init()
         self.getAllEvents({ (events) in
             self.event = events!
@@ -40,6 +40,7 @@ open class GathrEvent : NSObject{
                         let newPhoto = Event(data: photoDict)
                         self.event.append(newPhoto)
                     }}
+                GathrNotifications().postNotification(name: "GathrEventsLoaded")
                 completion(self.event)
                 
         }

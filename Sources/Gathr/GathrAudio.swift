@@ -16,7 +16,7 @@ open class GathrAudio : NSObject{
     
     public static let sharedInstance = GathrAudio()
     
-    override init() {
+    public override init() {
         super.init()
         self.getAllSongs({ (tracks) in
             self.audio = tracks!
@@ -38,6 +38,7 @@ open class GathrAudio : NSObject{
                         let newPhoto = Audio(data: photoDict)
                         self.audio.append(newPhoto)
                     }}
+                GathrNotifications().postNotification(name: "GathrAudioLoaded")
                 completion(self.audio)
         }
     }

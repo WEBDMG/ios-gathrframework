@@ -11,24 +11,26 @@ import Alamofire
 import SwiftyJSON
 
 open class GathrArticles : NSObject{
+    
     public var articles:[Articles] = [Articles]()
+    
     var config:Config!
     
     public static let sharedInstance = GathrArticles()
-    
-    override init() {
+        
+    public override init() {
         super.init()
         GathrConfig.sharedInstance.getConfigApi({ (config) in
             self.config = config
             
-            self.getAllArticles(self.config.blogurl, completion: { (article) in
+            self.getAllArticles(self.config.blogurl + "/wp-json/posts?filter[posts_per_page]=13&filter[order]=DESC", completion: { (article) in
                 self.articles = article!
             })
         })
     }
     
     open func getAllArticles(_ blogURL:String, completion: @escaping ([Articles]?) -> Void) {
-        Alamofire.request(blogURL + "/wp-json/posts?filter[posts_per_page]=13&filter[order]=DESC")
+        Alamofire.request(blogURL)
             .validate()
             .responseJSON { (response) -> Void in
                 self.articles = [Articles]()
@@ -39,6 +41,7 @@ open class GathrArticles : NSObject{
                         let newNews = Articles(data: newsDict)
                         self.articles.append(newNews)
                     }}
+                GathrNotifications().postNotification(name: "GathrArticlesLoaded")
                 completion(self.articles)
         }
     }

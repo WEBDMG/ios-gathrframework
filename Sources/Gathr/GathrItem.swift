@@ -17,7 +17,7 @@ open class GathrItem:NSObject{
     //Create a singleton
     public static let sharedInstance = GathrItem()
     
-    override init() {
+    public override init() {
         super.init()
         self.getAllItems({ (items) in
             self.item = items!
@@ -40,6 +40,7 @@ open class GathrItem:NSObject{
                         let newPhoto = Item(data: photoDict)
                         self.item.append(newPhoto)
                     }}
+                GathrNotifications().postNotification(name: "GathrItemsLoaded")
                 completion(self.item)
                 
         }

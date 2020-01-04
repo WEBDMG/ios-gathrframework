@@ -10,10 +10,12 @@ import UIKit
 import Alamofire
 
 open class GathrConfig : NSObject{
+    
     open var config: Config!
+    
     public static let sharedInstance = GathrConfig()
     
-    override init() {
+    public override init() {
         super.init()
         self.getConfigApi({ (config) in
             self.config = config
@@ -35,6 +37,7 @@ open class GathrConfig : NSObject{
             .responseJSON { response in
                 let data = response.result.value as! NSDictionary
                 self.config = Config(response: data)!
+                GathrNotifications().postNotification(name: "GathrConfigLoaded")
                 completion(self.config)
         }
     }

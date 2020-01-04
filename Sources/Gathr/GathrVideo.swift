@@ -17,7 +17,7 @@ open class GathrVideo: NSObject{
     //Create a singleton
     public static let sharedInstance = GathrVideo()
     
-    override init() {
+    public override init() {
         super.init()
         self.getAllVideos({ (videos) in
             self.video = videos!
@@ -39,6 +39,7 @@ open class GathrVideo: NSObject{
                         let newPhoto = Video(data: photoDict)
                         self.video.append(newPhoto)
                     }}
+                GathrNotifications().postNotification(name: "GathrVideoLoaded")
                 completion(self.video)
         }
     }
