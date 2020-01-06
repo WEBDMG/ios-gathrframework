@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-extension String{
+public extension String{
     var htmlStripped : String{
         return self.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
     }
 }
-extension UIColor {
+public extension UIColor {
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt64()
