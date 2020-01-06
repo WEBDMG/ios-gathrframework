@@ -14,6 +14,7 @@ open class Articles {
     public var excerpt:String = String()
     public var featuredImage:String = String()
     public var link:String = String()
+    public var content:String = String()
     
     public init(data: NSDictionary){
         if data["title"] != nil {
@@ -21,6 +22,9 @@ open class Articles {
         }
         if data["excerpt"] != nil {
             self.excerpt = String(data["excerpt"] as! String)
+        }
+        if data["content"] != nil {
+            self.content = String(data["content"] as! String)
         }
         if let featured_image = data["featured_image"] as? NSDictionary{
             if featured_image["source"] != nil {
@@ -40,6 +44,7 @@ open class Articles {
         let newsDictionary = [
             "title":self.title,
             "excerpt":self.excerpt,
+            "content":self.content,
             "featuredImage":self.featuredImage,
             "link":self.link
         ]

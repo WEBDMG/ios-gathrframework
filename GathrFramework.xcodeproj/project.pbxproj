@@ -11,6 +11,7 @@
 		639D97B0231DC8F100057F89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97AF231DC8F100057F89 /* Alamofire */; };
 		639D97B3231DC97900057F89 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97B2231DC97900057F89 /* SwiftyJSON */; };
 		639D97E1231E056C00057F89 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 639D97E0231E056C00057F89 /* Tests */; };
+		63B44C5B23C3E48F00C05E86 /* GathrExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B44C5A23C3E48F00C05E86 /* GathrExtensions.swift */; };
 		63D4FB8523BEE4C8009C032B /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7323BEE4C5009C032B /* Articles.swift */; };
 		63D4FB8623BEE4C8009C032B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7423BEE4C5009C032B /* Config.swift */; };
 		63D4FB8723BEE4C8009C032B /* Gathr.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D4FB7523BEE4C6009C032B /* Gathr.h */; };
@@ -37,6 +38,7 @@
 		637FDD24224BD34B00316C08 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		637FDD25224BD34B00316C08 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		639D97E0231E056C00057F89 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
+		63B44C5A23C3E48F00C05E86 /* GathrExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrExtensions.swift; sourceTree = "<group>"; };
 		63D4FB7323BEE4C5009C032B /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		63D4FB7423BEE4C5009C032B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		63D4FB7523BEE4C6009C032B /* Gathr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gathr.h; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				63D4FB7D23BEE4C7009C032B /* GathrText.swift */,
 				63D4FB7823BEE4C6009C032B /* GathrVideo.swift */,
 				63D4FBA323C00CF8009C032B /* GathrNotifications.swift */,
+				63B44C5A23C3E48F00C05E86 /* GathrExtensions.swift */,
 			);
 			path = Gathr;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D4FB8C23BEE4C8009C032B /* GathrConfig.swift in Sources */,
+				63B44C5B23C3E48F00C05E86 /* GathrExtensions.swift in Sources */,
 				63D4FB8F23BEE4C8009C032B /* GathrText.swift in Sources */,
 				63D4FB8923BEE4C8009C032B /* Video.swift in Sources */,
 				63D4FB9323BEE4C8009C032B /* Text.swift in Sources */,
