@@ -10,13 +10,16 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+/// Get Gathr Videos from API
 open class GathrVideo: NSObject{
     
+    /// Array of Gathr Video objects
     public var video:[Video] = [Video]()
     
-    //Create a singleton
+    /// Create a singleton
     public static let sharedInstance = GathrVideo()
     
+    /// init method
     public override init() {
         super.init()
         self.getAllVideos({ (videos) in
@@ -24,6 +27,8 @@ open class GathrVideo: NSObject{
         })
     }
     
+    /// Get all videos for a given token and playme app.
+    /// - Parameter completion: returns array of video objects.
     open func getAllVideos(_ completion: @escaping ([Video]?) -> Void) {
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]

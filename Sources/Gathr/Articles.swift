@@ -9,13 +9,21 @@
 import Foundation
 
 
+/// Gathr articles object
 open class Articles {
+    /// Title of the article
     public var title:String = String()
+    /// Excerpt of article
     public var excerpt:String = String()
+    /// Featured image of the article
     public var featuredImage:String = String()
+    /// Link to article on the internet
     public var link:String = String()
+    /// Main body content of the article post
     public var content:String = String()
     
+    /// Init to create Article object
+    /// - Parameter data: json data set to a dictionary
     public init(data: NSDictionary){
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
@@ -37,9 +45,7 @@ open class Articles {
         }
         
     }
-    
-    
-    
+    /// Convert Object to Dictionary
     open func toDictionary() -> NSDictionary {
         let newsDictionary = [
             "title":self.title,

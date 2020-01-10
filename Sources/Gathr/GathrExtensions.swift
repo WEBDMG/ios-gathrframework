@@ -10,11 +10,15 @@ import Foundation
 import UIKit
 
 public extension String{
+    /// Removes HTML tags from strings.
     var htmlStripped : String{
         return self.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
     }
 }
+
 public extension UIColor {
+    /// Returns UIColor objects for a provided hex code
+    /// - Parameter hexString: Hexstring to convert to uicolor
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt64()

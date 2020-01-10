@@ -11,11 +11,15 @@ import Foundation
 public class GathrConfiguration: NSObject {
     
     public static let sharedInstance = GathrConfiguration()
-    
+    /// Playme Tokens
     public struct Key{
+        /// User token
         public static let TOKEN = "TOKEN"
+        /// Base url to api
         public static let BASE_URL = "BASE_URL"
+        /// Token to identify app
         public static let PLAYMEAPPTOKEN = "PLAYMEAPPTOKEN"
+        /// API Key to auth to API
         public static let API_KEY = "API_KEY"
     }
     
