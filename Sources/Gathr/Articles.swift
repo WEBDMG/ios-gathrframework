@@ -10,6 +10,7 @@ import Foundation
 
 /// Gathr articles object
 open class Articles {
+    //MARK: - Properties
     /// Title of the article
     public var title:String = String()
     /// Excerpt of article

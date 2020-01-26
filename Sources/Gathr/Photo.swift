@@ -10,6 +10,7 @@ import Foundation
 
 /// Gathr Photo object
 open class Photo {
+    //MARK: - Properties
     /// String title of the Photo. Set by the user.
     public var title:String = String()
     /// URL to the photo. Set by Gathr during image upload.

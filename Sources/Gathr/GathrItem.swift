@@ -16,7 +16,7 @@ open class GathrItem:NSObject{
     /// Gathr Items Objects array
     public var item:[Item] = [Item]()
     
-    //Create a singleton
+    ///Create a singleton
     public static let sharedInstance = GathrItem()
    
     //MARK: - Init Method

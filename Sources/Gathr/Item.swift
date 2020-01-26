@@ -10,6 +10,7 @@ import Foundation
 
 /// Gathr Items object
 open class Item{
+    //MARK: - Properties
     /// Item id assigned by Gathr
     public var id:String = String()
     /// String name of item. Set by the user.

@@ -10,6 +10,7 @@ import Foundation
 
 /// Config class for base urls of a Gathr Project
 open class Config:NSObject{
+    //MARK: - Properties
     /// Users blog URL to pull articles from. Set by the user.
     public var blogurl = ""
     /// Apple ID of the app in the appstore. Set by the user.

@@ -10,6 +10,7 @@ import Foundation
 
 /// Gathr Video object
 open class Video{
+    //MARK: - Properties
     /// Video id assigned by Gathr
     public var sidvid:String = String()
     /// TItile of video. Set by the user.

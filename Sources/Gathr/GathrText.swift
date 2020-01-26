@@ -16,7 +16,7 @@ open class GathrText: NSObject {
     /// Gathr Photos object
     public var text:[Text] = [Text]()
     
-    //Create a singleton
+    ///Create a singleton
     public static let sharedInstance = GathrText()
     
     //MARK: - Init Method

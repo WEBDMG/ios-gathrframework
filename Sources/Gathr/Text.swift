@@ -10,6 +10,7 @@ import Foundation
 
 /// Gathr Text object
 open class Text {
+    //MARK: - Properties
     /// Text id assigned by Gathr
     public var textid:String = String()
     /// String title of Text. Set by the user.

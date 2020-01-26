@@ -10,6 +10,7 @@ import Foundation
 
 /// Gathr audio object
 open class Audio {
+    //MARK: - Properties
     /// Audio id assigned by Gathr
     public var sidid:String = String()
     /// Title of audio file set by user on upload
@@ -30,9 +31,9 @@ open class Audio {
     public var artistName:String = String()
     /// Social media link to app owners social media. Set by the user at upload.
     public var facebook:String = String()
-    /// /// Social media link to app owners social media. Set by the user at upload.
+    /// Social media link to app owners social media. Set by the user at upload.
     public var twitter:String = String()
-    /// /// Social media link to app owners social media. Set by the user at upload.
+    /// Social media link to app owners social media. Set by the user at upload.
     public var image:String = String()
     
     //MARK: - Init method
