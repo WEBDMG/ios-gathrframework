@@ -15,6 +15,7 @@ ___
 
 ### Installation
 ___
+### Cocoapods
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
 To integrate GathrFramework into your Xcode project using CocoaPods, specify it in your `Podfile`:
@@ -35,7 +36,9 @@ end
 Then, run the following command:
 
 ``` $ pod install ```
+### Swift Package Manager
 
+Set  https://github.com/WEBDMG/ios-gathrframework.git in the Swift Packages section of your Xcode project.
 
 ### Usage
 

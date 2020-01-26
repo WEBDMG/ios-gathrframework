@@ -9,12 +9,17 @@
 import UIKit
 import Alamofire
 
+/// Creates Gathr Config object
 open class GathrConfig : NSObject{
     
+    /// Config object
     open var config: Config!
     
+    /// Creates singleton
     public static let sharedInstance = GathrConfig()
     
+    //MARK: - Init method
+    /// Init Method
     public override init() {
         super.init()
         self.getConfigApi({ (config) in
@@ -22,12 +27,8 @@ open class GathrConfig : NSObject{
         })
     }
     
-    /**
-     Gets remote config data and passes it back as a dictionary.
-     After reading Playme.plist to get the base url and user token.
-     
-     - parameter completion: NSDictionary of result
-     */
+    ///Gets remote config data and passes it back as a dictionary. After reading Playme.plist to get the base url and user token.
+    /// - Parameter completion: NSDictionary of result
     open func getConfigApi(_ completion: @escaping (Config) -> Void){
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]

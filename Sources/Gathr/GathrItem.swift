@@ -10,13 +10,18 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+/// Gathr Items Objects Arry
 open class GathrItem:NSObject{
-    
+     
+    /// Gathr Items Objects array
     public var item:[Item] = [Item]()
     
     //Create a singleton
     public static let sharedInstance = GathrItem()
+   
+    //MARK: - Init Method
     
+    /// init method
     public override init() {
         super.init()
         self.getAllItems({ (items) in
@@ -24,6 +29,8 @@ open class GathrItem:NSObject{
         })
     }
     
+    /// Gets all items from the Gathr API that is set to active
+    /// - Parameter completion: returns array of Gathr Item Objects
     open func getAllItems(_ completion: @escaping ([Item]?) -> Void) {
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]

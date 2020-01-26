@@ -10,12 +10,17 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+/// Creates array of Gathr Audio objects
 open class GathrAudio : NSObject{
     
+    /// Gathr Audio Objects Array
     public var audio:[Audio] = [Audio]()
     
+    /// Creates a singleton
     public static let sharedInstance = GathrAudio()
     
+    //MARK: - Init method
+    /// Init method
     public override init() {
         super.init()
         self.getAllSongs({ (tracks) in
@@ -23,6 +28,8 @@ open class GathrAudio : NSObject{
         })
     }
     
+    /// gets all audio objects from Gathr Api that have an active status flag set to true.
+    /// - Parameter completion: Return optional array of audio objects.
     open func getAllSongs(_ completion: @escaping ([Audio]?) -> Void) {
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]

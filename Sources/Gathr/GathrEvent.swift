@@ -10,13 +10,17 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+/// Creates array of Gathr Event Objects
 open class GathrEvent : NSObject{
     
+     /// Gathr Event Objects Array
     public var event:[Event] = [Event]()
     
-    //Create a singleton
+    ///Create a singleton
     public static let sharedInstance = GathrEvent()
+//MARK: - Init Method
     
+    /// Init method
     public override init() {
         super.init()
         self.getAllEvents({ (events) in
@@ -24,6 +28,8 @@ open class GathrEvent : NSObject{
         })
     }
     
+    /// Gets all events from the Gathr API that is set to active and the date for the event is not in the past.
+    /// - Parameter completion: returns array of Gathr Event Objects
     open func getAllEvents(_ completion: @escaping ([Event]?) -> Void) {
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]
