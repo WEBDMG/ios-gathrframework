@@ -10,13 +10,17 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+/// Creates array of Gathr Photos Objects
 open class GathrPhotos : NSObject{
     
+    /// Gathr Photos object
     public var photos:[Photo] = [Photo]()
     
-    //Create a singleton
+    ///Create a singleton
     public static let sharedInstance = GathrPhotos()
     
+    //MARK: - Init Method
+    /// init method
     public override init() {
         super.init()
         self.getAllPhotos({ (photos) in
@@ -24,6 +28,8 @@ open class GathrPhotos : NSObject{
         })
     }
     
+    /// Gets all photo objects from images uploaded by the user that have active set to true.
+    /// - Parameter completion: Returns array of photo objects.
     open func getAllPhotos(_ completion: @escaping ([Photo]?) -> Void) {
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]

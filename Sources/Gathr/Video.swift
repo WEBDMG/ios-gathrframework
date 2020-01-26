@@ -8,12 +8,19 @@
 
 import Foundation
 
+/// Gathr Video object
 open class Video{
+    /// Video id assigned by Gathr
     public var sidvid:String = String()
+    /// TItile of video. Set by the user.
     public var title:String = String()
+    /// URL to youtube video.
     public var video:String = String()
+    /// URL to video uploaded into the Gathr System.
     public var videoM:String = String()
+    /// URL to poster image for video that was uploaded bu the user.
     public var image:String = String()
+    /// Can only be Youtube or uploaded.
     public var type:String = String()
     
     //MARK: - Init method

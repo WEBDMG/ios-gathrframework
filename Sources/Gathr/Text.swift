@@ -8,12 +8,19 @@
 
 import Foundation
 
+/// Gathr Text object
 open class Text {
+    /// Text id assigned by Gathr
     public var textid:String = String()
+    /// String title of Text. Set by the user.
     public var title:String = String()
+    /// Body of the text. Set by the user.
     public var text:String = String()
+    /// The name of the person or persons that wrote the test. Set by the user.
     public var author:String = String()
+    /// Can be quote or atricle. Set by the user.
     public var type:String = String()
+    /// Date created
     public var date:String = String()
     
     //MARK: - Init method

@@ -8,10 +8,15 @@
 
 import Foundation
 
+/// Gathr Photo object
 open class Photo {
+    /// String title of the Photo. Set by the user.
     public var title:String = String()
+    /// URL to the photo. Set by Gathr during image upload.
     public var url:String = String()
+    /// can be uploaded or instagram. Set by Gathr
     public var source:String = String()
+    /// Active or inactive flag.
     public var active:Bool?
     
     //MARK: - Init method

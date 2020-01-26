@@ -10,18 +10,26 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+/// Creates array of Gathr Photos Objects
 open class GathrText: NSObject {
     
+    /// Gathr Photos object
     public var text:[Text] = [Text]()
     
     //Create a singleton
     public static let sharedInstance = GathrText()
+    
+    //MARK: - Init Method
+    /// init method
     public override init() {
         super.init()
         self.getAllTexts({ (texts) in
             self.text = texts!
         })
     }
+    
+    /// Get all text objects from the Gathr API that have the active flag set to true
+    /// - Parameter completion: Returns array of Gathr Text objects.
     open func getAllTexts(_ completion: @escaping ([Text]?) -> Void) {
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]

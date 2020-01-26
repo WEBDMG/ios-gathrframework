@@ -8,13 +8,21 @@
 
 import Foundation
 
+/// Gathr Items object
 open class Item{
+    /// Item id assigned by Gathr
     public var id:String = String()
+    /// String name of item. Set by the user.
     public var name:String = String()
+    /// String description of the item. Set by the user.
     public var desc:String = String()
+    /// Price of the item. Set by the user.
     public var price:String = String()
+    /// URL to an image uploaded by the user.
     public var image:String = String()
+    /// A acitvie non-active status. Set by the user.
     public var status:String = String()
+    /// Quantity of item the user has. Set by the user.
     public var inventory:String = String()
     
     //MARK: - Init method
