@@ -8,20 +8,37 @@
 
 import Foundation
 
+/// Gathr audio object
 open class Audio {
+    /// Audio id assigned by Gathr
     public var sidid:String = String()
+    /// Title of audio file set by user on upload
     public var title:String = String()
+    /// ???
     public var songs:String = String()
+    /// Video URL
     public var video:String = String()
+    /// URL to audio file
     public var link:String = String()
+    /// String description of the content of audio file. Set by the user.
     public var aboutTrack:String = String()
+    /// Production credits for the person that wrote the content of the auiod file. Set by the user at upload.
     public var writtenBy:String = String()
+    /// Can be "uploaded" of "soundcloud"
     public var source:String = String()
+    /// String name of person or persons that performed the audio. Set by the user at upload.
     public var artistName:String = String()
+    /// Social media link to app owners social media. Set by the user at upload.
     public var facebook:String = String()
+    /// /// Social media link to app owners social media. Set by the user at upload.
     public var twitter:String = String()
+    /// /// Social media link to app owners social media. Set by the user at upload.
     public var image:String = String()
     
+    //MARK: - Init method
+    
+    /// Init method
+    /// - Parameter data: json data set to a dictionary
     public init(data: NSDictionary){
         if data["sidid"] != nil {
             self.sidid = String(data["sidid"] as! String)
@@ -62,6 +79,8 @@ open class Audio {
         
     }
     
+    /// If data is already a dictionary and you need to convert it to an audio object
+    /// - Parameter dictionary: NSDictionary data to be passed in.
     public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "sidid") != nil {
             self.sidid = dictionary.value(forKey: "sidid") as! String
@@ -101,6 +120,8 @@ open class Audio {
         }
     }
     
+    //MARK: - To Method
+    /// Convert Object to Dictionary
     open func toDictionary() -> NSDictionary {
         let newsDictionary = [
             "sidid":self.sidid,

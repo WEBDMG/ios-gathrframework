@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// Gathr articles object
 open class Articles {
     /// Title of the article
