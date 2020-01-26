@@ -17,7 +17,9 @@ open class Item{
     public var status:String = String()
     public var inventory:String = String()
     
-    
+    //MARK: - Init method
+    /// Init to create Item object
+    /// - Parameter data: json data set to a dictionary
    public init(data: NSDictionary){
         if data["id"] != nil {
             self.id = String(data["id"] as! String)
@@ -41,7 +43,8 @@ open class Item{
             self.inventory = String(data["inventory"] as! String)
         }
     }
-    
+    /// If data is already a dictionary and you need to convert it to an Item object
+    /// - Parameter dictionary: NSDictionary data to be passed in.
     public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "id") != nil {
             self.id = dictionary.value(forKey: "id") as! String
@@ -66,6 +69,8 @@ open class Item{
         }
     }
     
+    //MARK: - To method
+    /// Convert Object to Dictionary
     open func toDictionary() -> NSDictionary {
         let itemDictionary = [
             "id":self.id,

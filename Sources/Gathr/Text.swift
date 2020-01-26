@@ -16,7 +16,9 @@ open class Text {
     public var type:String = String()
     public var date:String = String()
     
-    
+    //MARK: - Init method
+    /// Init to create Text object
+     /// - Parameter data: json data set to a dictionary
     public init(data: NSDictionary){
         if data["textid"] != nil {
             self.textid = String(data["textid"] as! String)
@@ -37,7 +39,9 @@ open class Text {
             self.date = String(data["date"] as! String)
         }
     }
-    
+
+    /// If data is already a dictionary and you need to convert it to an Text object
+    /// - Parameter dictionary: NSDictionary data to be passed in.
    public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "textid") != nil {
             self.textid = dictionary.value(forKey: "textid") as! String
@@ -60,6 +64,8 @@ open class Text {
         
     }
     
+    //MARK: - To method
+    /// Convert Object to Dictionary
     open func toDictionary() -> NSDictionary {
         let itemDictionary = [
             "textid":self.textid,

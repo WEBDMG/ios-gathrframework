@@ -16,7 +16,9 @@ open class Video{
     public var image:String = String()
     public var type:String = String()
     
-    
+    //MARK: - Init method
+    /// Init to create Video object
+    /// - Parameter data: json data set to a dictionary
     public init(data: NSDictionary){
         if data["sidvid"] != nil {
             self.sidvid = String(data["sidvid"] as! String)
@@ -39,6 +41,8 @@ open class Video{
         
     }
     
+    /// If data is already a dictionary and you need to convert it to an Video object
+    /// - Parameter dictionary: NSDictionary data to be passed in.
     public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "sidvid") != nil {
             self.sidvid = dictionary.value(forKey: "sidvid") as! String
@@ -60,6 +64,8 @@ open class Video{
         }
     }
     
+    //MARK: - To method
+    /// Convert Object to Dictionary
     open func toDictionary() -> NSDictionary {
         let videoDictionary = [
             "sidvid":self.sidvid,

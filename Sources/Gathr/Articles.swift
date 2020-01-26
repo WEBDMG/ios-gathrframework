@@ -21,6 +21,7 @@ open class Articles {
     /// Main body content of the article post
     public var content:String = String()
     
+    //MARK: - Init method
     /// Init to create Article object
     /// - Parameter data: json data set to a dictionary
     public init(data: NSDictionary){
@@ -44,6 +45,8 @@ open class Articles {
         }
         
     }
+    
+    //MARK: - To Method
     /// Convert Object to Dictionary
     open func toDictionary() -> NSDictionary {
         let newsDictionary = [

@@ -14,6 +14,9 @@ open class Photo {
     public var source:String = String()
     public var active:Bool?
     
+    //MARK: - Init method
+    /// Init to create Photo object
+    /// - Parameter data: json data set to a dictionary
     public init(data: NSDictionary){
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
@@ -29,7 +32,8 @@ open class Photo {
         }
     }
         
-    
+    /// If data is already a dictionary and you need to convert it to an Photo object
+    /// - Parameter dictionary: NSDictionary data to be passed in.
     public init(dictionary: NSDictionary){
         if dictionary.value(forKey: "title") != nil {
             self.title = dictionary.value(forKey: "title") as! String
@@ -47,7 +51,8 @@ open class Photo {
     }
         
 
-    
+    //MARK: - To method
+    /// Convert Object to Dictionary
     open func toDictionary() -> NSDictionary {
         let photosDictionary = [
             "title":self.title,
@@ -56,11 +61,5 @@ open class Photo {
             "active":self.active!
             ] as [String : Any]
         return photosDictionary as NSDictionary
-    }
-}
-
-extension String {
-    var boolValue: Bool {
-        return NSString(string: self).boolValue
     }
 }

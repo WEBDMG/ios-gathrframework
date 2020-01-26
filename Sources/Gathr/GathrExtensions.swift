@@ -14,6 +14,11 @@ public extension String{
     var htmlStripped : String{
         return self.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
     }
+    
+    /// Return bool value for a string.
+    var boolValue: Bool {
+        return NSString(string: self).boolValue
+    }
 }
 
 public extension UIColor {
