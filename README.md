@@ -1,6 +1,6 @@
 # Gathr Framework
-
-![alt text](https://img.shields.io/badge/Vers%3A-3-333.svg?style=flat "Version 3")
+[![codebeat badge](https://codebeat.co/badges/a51b98cc-0d35-4a12-9655-ee395ed4e605)](https://codebeat.co/a/kincade71/projects/github-com-webdmg-ios-gathrframework-master)
+![alt text](https://img.shields.io/badge/Vers%3A-3-333.svg?style=flat "Version 4")
 ![alt text](https://img.shields.io/badge/Gathr%20API%20Vers%3A-4-lightgrey.svg?style=flat "Gathr API Verson")
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![alt text](https://img.shields.io/badge/Cocoapods%3A-compatible-red.svg?style=flat "Cocoapods compatible")

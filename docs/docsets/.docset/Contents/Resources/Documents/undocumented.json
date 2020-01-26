@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/marirobinson/Xcode/ios-gathrframework/Sources/Gathr/GathrItem.swift",
-      "line": 20,
-      "symbol": "GathrItem.sharedInstance",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/marirobinson/Xcode/ios-gathrframework"
 }
