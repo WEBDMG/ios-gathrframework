@@ -48,3 +48,6 @@ _ = GConfiguration()
 
 ```
 In app delegate inside ```func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {``` Method
+
+### Documentation
+[Gathr Code Documentation](https://github.com/WEBDMG/ios-gathrframework/tree/master/Documentation/Reference)
