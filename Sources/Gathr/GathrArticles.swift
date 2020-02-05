@@ -29,7 +29,7 @@ open class GathrArticles : NSObject{
         GathrConfig.sharedInstance.getConfigApi({ (config) in
             self.config = config
             
-            self.getAllArticles(self.config.blogurl + "/wp-json/posts?filter[posts_per_page]=13&filter[order]=DESC", completion: { (article) in
+            self.getAllArticles(self.config.blogurl + "/wp-json/posts?filter[posts_per_page]=5&filter[order]=DESC", completion: { (article) in
                 self.articles = article!
             })
         })
