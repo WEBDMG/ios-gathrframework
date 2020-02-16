@@ -12,40 +12,40 @@ import Foundation
 open class Audio {
     //MARK: - Properties
     /// Audio id assigned by Gathr
-    public var sidid:String = String()
+    public var sidid:String?
     /// Title of audio file set by user on upload
-    public var title:String = String()
+    public var title:String?
     /// ???
-    public var songs:String = String()
+    public var songs:String?
     /// Video URL
-    public var video:String = String()
+    public var video:String?
     /// URL to audio file
-    public var link:String = String()
+    public var link:String?
     /// String description of the content of audio file. Set by the user.
-    public var aboutTrack:String = String()
+    public var aboutTrack:String?
     /// Production credits for the person that wrote the content of the auiod file. Set by the user at upload.
-    public var writtenBy:String = String()
+    public var writtenBy:String?
     /// Can be "uploaded" of "soundcloud"
-    public var source:String = String()
+    public var source:String?
     /// String name of person or persons that performed the audio. Set by the user at upload.
-    public var artistName:String = String()
+    public var artistName:String?
     /// Social media link to app owners social media. Set by the user at upload.
-    public var facebook:String = String()
+    public var facebook:String?
     /// Social media link to app owners social media. Set by the user at upload.
-    public var twitter:String = String()
+    public var twitter:String?
     /// Social media link to app owners social media. Set by the user at upload.
-    public var image:String = String()
+    public var image:String?
     
     //MARK: - Init method
     
     /// Init method
     /// - Parameter data: json data set to a dictionary
     public init(data: NSDictionary){
-        if data["sidid"] != nil {
-            self.sidid = String(data["sidid"] as! String)
+        if let sid = data["sidid"] {
+            self.sidid = sid as! String
         }
-        if data["title"] != nil {
-            self.title = String(data["title"] as! String)
+        if let lead = data["title"] {
+            self.title = lead as! String
         }
         if data["image"] != nil {
             self.image = String(data["image"] as! String)
