@@ -23,6 +23,8 @@ open class Video{
     public var image:String = String()
     /// Can only be Youtube or uploaded.
     public var type:String = String()
+    /// Details or description for video content.
+    public var details:String = String()
     
     //MARK: - Init method
     /// Init to create Video object
@@ -45,6 +47,9 @@ open class Video{
         }
         if data["type"] != nil {
             self.type = String(data["type"] as! String)
+        }
+        if data["details"] != nil {
+            self.details = String(data["details"] as! String)
         }
         
     }
@@ -70,6 +75,9 @@ open class Video{
         if dictionary.value(forKey: "type") != nil {
             self.type = dictionary.value(forKey: "type") as! String
         }
+        if dictionary.value(forKey: "details") != nil {
+            self.type = dictionary.value(forKey: "details") as! String
+        }
     }
     
     //MARK: - To method
@@ -80,7 +88,8 @@ open class Video{
             "title":self.title,
             "videoM":self.videoM,
             "image":self.image,
-            "type":self.type
+            "type":self.type,
+            "details":self.details
         ]
         return videoDictionary as NSDictionary
     }
