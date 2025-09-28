@@ -50,5 +50,26 @@ open class GathrAudio : NSObject{
         }
     }
     
+    open func getAllAudioByCategory(category:String, completion: @escaping ([Audio]?) -> Void) {
+        let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
+        let header:HTTPHeaders = ["X-API-KEY":apikey]
+        var string = "\(GathrConfiguration.sharedInstance.BASE_URL()!)audio/find/category/\(category)/token/\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
+        Alamofire.request(string,headers:header)
+            .validate()
+            .responseJSON { (response) -> Void in
+                self.audio = [Audio]()
+                let data = JSON(response.result.value!)
+                if let photoItems = data["songs"].array{
+                    for photoData in photoItems {
+                        
+                        let photoDict = photoData.dictionaryObject! as NSDictionary
+                        let newPhoto = Audio(data: photoDict)
+                        self.audio.append(newPhoto)
+                    }}
+                GathrNotifications().postNotification(name: "GathrVideoLoaded")
+                completion(self.audio)
+        }
+    }
+    
 }
 
