@@ -51,4 +51,25 @@ open class GathrPhotos : NSObject{
         }
     }
     
+    open func getAllPhotosByCategory(category:String, completion: @escaping ([Photo]?) -> Void) {
+        let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
+        let header:HTTPHeaders = ["X-API-KEY":apikey]
+        var string = "\(GathrConfiguration.sharedInstance.BASE_URL()!)photo/find/category/\(category)/token/\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
+        Alamofire.request(string,headers:header)
+            .validate()
+            .responseJSON { (response) -> Void in
+                self.photos = [Photo]()
+                let data = JSON(response.result.value!)
+                if let photoItems = data.array{
+                    for photoData in photoItems {
+                        
+                        let photoDict = photoData.dictionaryObject! as NSDictionary
+                        let newPhoto = Photo(data: photoDict)
+                        self.photos.append(newPhoto)
+                    }}
+                GathrNotifications().postNotification(name: "GathrVideoLoaded")
+                completion(self.photos)
+        }
+    }
+    
 }

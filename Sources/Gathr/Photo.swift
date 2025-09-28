@@ -10,6 +10,7 @@ import Foundation
 
 /// Gathr Photo object
 open class Photo {
+    public var photoid:String = String()
     //MARK: - Properties
     /// String title of the Photo. Set by the user.
     public var title:String = String()
@@ -24,6 +25,9 @@ open class Photo {
     /// Init to create Photo object
     /// - Parameter data: json data set to a dictionary
     public init(data: NSDictionary){
+        if data["photoid"] != nil {
+            self.photoid = String(data["photoid"] as! String)
+        }
         if data["title"] != nil {
             self.title = String(data["title"] as! String)
         }
@@ -41,6 +45,9 @@ open class Photo {
     /// If data is already a dictionary and you need to convert it to an Photo object
     /// - Parameter dictionary: NSDictionary data to be passed in.
     public init(dictionary: NSDictionary){
+        if dictionary.value(forKey: "photoid") != nil {
+            self.photoid = dictionary.value(forKey: "photoid") as! String
+        }
         if dictionary.value(forKey: "title") != nil {
             self.title = dictionary.value(forKey: "title") as! String
         }
@@ -61,6 +68,7 @@ open class Photo {
     /// Convert Object to Dictionary
     open func toDictionary() -> NSDictionary {
         let photosDictionary = [
+            "photoid":self.photoid,
             "title":self.title,
             "excerpt":self.url,
             "source":self.source,
