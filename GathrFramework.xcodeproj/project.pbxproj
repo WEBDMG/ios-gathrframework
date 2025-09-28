@@ -13,7 +13,8 @@
 		639D97E1231E056C00057F89 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 639D97E0231E056C00057F89 /* Tests */; };
 		63B44C5B23C3E48F00C05E86 /* GathrExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B44C5A23C3E48F00C05E86 /* GathrExtensions.swift */; };
 		63C1EC352E8821C4009CEF4F /* GathrCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1EC342E8821C4009CEF4F /* GathrCategory.swift */; };
-		63C1EC3A2E884057009CEF4F /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1EC392E884057009CEF4F /* Categories.swift */; };
+		63C1EC3E2E89ABE9009CEF4F /* GathrTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1EC3D2E89ABE9009CEF4F /* GathrTexts.swift */; };
+		63C1EC402E89AC01009CEF4F /* GathrCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1EC3F2E89AC01009CEF4F /* GathrCategories.swift */; };
 		63D4FB8523BEE4C8009C032B /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7323BEE4C5009C032B /* Articles.swift */; };
 		63D4FB8623BEE4C8009C032B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7423BEE4C5009C032B /* Config.swift */; };
 		63D4FB8723BEE4C8009C032B /* Gathr.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D4FB7523BEE4C6009C032B /* Gathr.h */; };
@@ -28,7 +29,6 @@
 		63D4FB9023BEE4C8009C032B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7E23BEE4C7009C032B /* Event.swift */; };
 		63D4FB9123BEE4C8009C032B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB7F23BEE4C7009C032B /* Photo.swift */; };
 		63D4FB9223BEE4C8009C032B /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8023BEE4C7009C032B /* Audio.swift */; };
-		63D4FB9323BEE4C8009C032B /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8123BEE4C8009C032B /* Text.swift */; };
 		63D4FB9423BEE4C8009C032B /* GathrConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8223BEE4C8009C032B /* GathrConfiguration.swift */; };
 		63D4FB9523BEE4C8009C032B /* GathrAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8323BEE4C8009C032B /* GathrAudio.swift */; };
 		63D4FB9623BEE4C8009C032B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8423BEE4C8009C032B /* Item.swift */; };
@@ -42,7 +42,8 @@
 		639D97E0231E056C00057F89 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		63B44C5A23C3E48F00C05E86 /* GathrExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrExtensions.swift; sourceTree = "<group>"; };
 		63C1EC342E8821C4009CEF4F /* GathrCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrCategory.swift; sourceTree = "<group>"; };
-		63C1EC392E884057009CEF4F /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		63C1EC3D2E89ABE9009CEF4F /* GathrTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrTexts.swift; sourceTree = "<group>"; };
+		63C1EC3F2E89AC01009CEF4F /* GathrCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrCategories.swift; sourceTree = "<group>"; };
 		63D4FB7323BEE4C5009C032B /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		63D4FB7423BEE4C5009C032B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		63D4FB7523BEE4C6009C032B /* Gathr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gathr.h; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		63D4FB7E23BEE4C7009C032B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		63D4FB7F23BEE4C7009C032B /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		63D4FB8023BEE4C7009C032B /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
-		63D4FB8123BEE4C8009C032B /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		63D4FB8223BEE4C8009C032B /* GathrConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrConfiguration.swift; sourceTree = "<group>"; };
 		63D4FB8323BEE4C8009C032B /* GathrAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrAudio.swift; sourceTree = "<group>"; };
 		63D4FB8423BEE4C8009C032B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -106,8 +106,6 @@
 				63D4FB7E23BEE4C7009C032B /* Event.swift */,
 				63D4FB8423BEE4C8009C032B /* Item.swift */,
 				63D4FB7F23BEE4C7009C032B /* Photo.swift */,
-				63C1EC392E884057009CEF4F /* Categories.swift */,
-				63D4FB8123BEE4C8009C032B /* Text.swift */,
 				63D4FB7723BEE4C6009C032B /* Video.swift */,
 				63D4FB7523BEE4C6009C032B /* Gathr.h */,
 				63D4FB7923BEE4C6009C032B /* GathrArticles.swift */,
@@ -117,8 +115,10 @@
 				63D4FB7C23BEE4C7009C032B /* GathrEvent.swift */,
 				63D4FB7623BEE4C6009C032B /* GathrItem.swift */,
 				63D4FB7B23BEE4C7009C032B /* GathrPhotos.swift */,
+				63C1EC3D2E89ABE9009CEF4F /* GathrTexts.swift */,
 				63D4FB7D23BEE4C7009C032B /* GathrText.swift */,
 				63D4FB7823BEE4C6009C032B /* GathrVideo.swift */,
+				63C1EC3F2E89AC01009CEF4F /* GathrCategories.swift */,
 				63C1EC342E8821C4009CEF4F /* GathrCategory.swift */,
 				63D4FBA323C00CF8009C032B /* GathrNotifications.swift */,
 				63B44C5A23C3E48F00C05E86 /* GathrExtensions.swift */,
@@ -245,11 +245,10 @@
 				63C1EC352E8821C4009CEF4F /* GathrCategory.swift in Sources */,
 				63D4FB8F23BEE4C8009C032B /* GathrText.swift in Sources */,
 				63D4FB8923BEE4C8009C032B /* Video.swift in Sources */,
-				63D4FB9323BEE4C8009C032B /* Text.swift in Sources */,
 				63D4FB9523BEE4C8009C032B /* GathrAudio.swift in Sources */,
 				63D4FB8B23BEE4C8009C032B /* GathrArticles.swift in Sources */,
-				63C1EC3A2E884057009CEF4F /* Categories.swift in Sources */,
 				63D4FB9423BEE4C8009C032B /* GathrConfiguration.swift in Sources */,
+				63C1EC402E89AC01009CEF4F /* GathrCategories.swift in Sources */,
 				63D4FB8D23BEE4C8009C032B /* GathrPhotos.swift in Sources */,
 				63D4FB9223BEE4C8009C032B /* Audio.swift in Sources */,
 				63D4FB9023BEE4C8009C032B /* Event.swift in Sources */,
@@ -259,6 +258,7 @@
 				63D4FB8623BEE4C8009C032B /* Config.swift in Sources */,
 				63D4FB9123BEE4C8009C032B /* Photo.swift in Sources */,
 				63D4FB8823BEE4C8009C032B /* GathrItem.swift in Sources */,
+				63C1EC3E2E89ABE9009CEF4F /* GathrTexts.swift in Sources */,
 				63D4FB8A23BEE4C8009C032B /* GathrVideo.swift in Sources */,
 				63D4FB8E23BEE4C8009C032B /* GathrEvent.swift in Sources */,
 			);
