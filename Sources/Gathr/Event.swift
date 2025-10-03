@@ -29,6 +29,7 @@ open class Event{
     public var marketinglink:String = String()
     /// A URL to a promotional image or flyer of the event. Set by the user at upload.
     public var image:String = String()
+    public var category:String = String()
     
     //MARK: - Init method
     /// Init to create Event object
@@ -60,6 +61,9 @@ open class Event{
         }
         if data["image"] != nil {
             self.image = String(data["image"] as! String)
+        }
+        if data["category"] != nil {
+            self.category = String(data["category"] as! String)
         }
     }
     
@@ -93,6 +97,9 @@ open class Event{
         if dictionary.value(forKey: "image") != nil {
             self.image = dictionary.value(forKey: "image") as! String
         }
+        if dictionary.value(forKey: "category") != nil {
+            self.category = dictionary.value(forKey: "category") as! String
+        }
     }
     //MARK: - To method
     /// Convert Object to Dictionary
@@ -106,7 +113,8 @@ open class Event{
             "notes":self.notes,
             "ticketlink":self.ticketlink,
             "marketinglink":self.marketinglink,
-            "image":self.image
+            "image":self.image,
+            "category":self.category
         ]
         return newsDictionary as NSDictionary
     }
