@@ -8,7 +8,15 @@
 import Foundation
 
 /// Gathr audio object
-open class GathrCategory {
+open class GathrCategory:Identifiable, Hashable {
+    public static func == (lhs: GathrCategory, rhs: GathrCategory) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
     //MARK: - Properties
     /// Audio id assigned by Gathr
     public var id = UUID()
