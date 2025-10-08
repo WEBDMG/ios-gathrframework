@@ -32,7 +32,7 @@ open class GathrCategories: NSObject{
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]
         let string = "\(GathrConfiguration.sharedInstance.BASE_URL()!)login/categories/token/\(GathrConfiguration.sharedInstance.TOKEN()!)/apptoken/\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
-//        print(string)
+        //print(string)
         Alamofire.request(string,headers:header)
             .validate()
             .responseJSON { (response) -> Void in
@@ -46,7 +46,7 @@ open class GathrCategories: NSObject{
                         self.gcategories.append(newPhoto)
                     }}
                 GathrNotifications().postNotification(name: "GathrVideoLoaded")
-//                print(response.result.value!)
+                //print(response.result.value!)
                 completion(self.gcategories)
         }
     }
@@ -69,6 +69,7 @@ open class GathrCategories: NSObject{
                         if newPhoto.name != "featured"{
                             let cleanedName = newPhoto.name?
                                 .replacingOccurrences(of: "_flare", with: "")
+                                .replacingOccurrences(of: "_icon", with: "")
                                 .trimmingCharacters(in: .whitespacesAndNewlines)
                                 .removingPercentEncoding ?? newPhoto.name
                             newPhoto.name = cleanedName

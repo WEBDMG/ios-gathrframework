@@ -16,6 +16,8 @@ open class GathrPhotos : NSObject{
     /// Gathr Photos object
     public var photos:[Photo] = [Photo]()
     
+    //public var icon = Photo()
+    
     ///Create a singleton
     public static let sharedInstance = GathrPhotos()
     
@@ -37,7 +39,8 @@ open class GathrPhotos : NSObject{
             .validate()
             .responseJSON { (response) -> Void in
                 self.photos = [Photo]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let photoItems = data["photos"].array{
                     for photoData in photoItems {
                         
@@ -55,11 +58,13 @@ open class GathrPhotos : NSObject{
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]
         var string = "\(GathrConfiguration.sharedInstance.BASE_URL()!)photo/find/category/\(category)/token/\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
+       // print(string)
         Alamofire.request(string,headers:header)
             .validate()
             .responseJSON { (response) -> Void in
                 self.photos = [Photo]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let photoItems = data.array{
                     for photoData in photoItems {
                         
@@ -67,6 +72,7 @@ open class GathrPhotos : NSObject{
                         let newPhoto = Photo(data: photoDict)
                         self.photos.append(newPhoto)
                     }}
+                //print(response)
                 GathrNotifications().postNotification(name: "GathrVideoLoaded")
                 completion(self.photos)
         }
