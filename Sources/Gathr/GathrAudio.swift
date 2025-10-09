@@ -37,7 +37,8 @@ open class GathrAudio : NSObject{
             .validate()
             .responseJSON { (response) -> Void in
                 self.audio = [Audio]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let photoItems = data["songs"].array{
                     for photoData in photoItems {
                         
@@ -58,7 +59,8 @@ open class GathrAudio : NSObject{
             .validate()
             .responseJSON { (response) -> Void in
                 self.audio = [Audio]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let photoItems = data["songs"].array{
                     for photoData in photoItems {
                         

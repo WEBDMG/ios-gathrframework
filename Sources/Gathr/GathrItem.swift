@@ -39,7 +39,8 @@ open class GathrItem:NSObject{
             .validate()
             .responseJSON { (response) -> Void in
                 self.item = [Item]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let photoItems = data["items"].array{
                     for photoData in photoItems {
                         

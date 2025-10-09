@@ -36,7 +36,8 @@ open class GathrVideo: NSObject{
             .validate()
             .responseJSON { (response) -> Void in
                 self.video = [Video]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let photoItems = data["videos"].array{
                     for photoData in photoItems {
                         
@@ -53,11 +54,13 @@ open class GathrVideo: NSObject{
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]
         var string = "\(GathrConfiguration.sharedInstance.BASE_URL()!)video/find/category/\(category)/token/\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
+        print(string)
         Alamofire.request(string,headers:header)
             .validate()
             .responseJSON { (response) -> Void in
                 self.video = [Video]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let photoItems = data.array{
                     for photoData in photoItems {
                         

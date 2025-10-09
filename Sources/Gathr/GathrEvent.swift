@@ -38,7 +38,8 @@ open class GathrEvent : NSObject{
             .validate()
             .responseJSON { (response) -> Void in
                 self.event = [Event]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let photoItems = data["events"].array{
                     for photoData in photoItems {
                         

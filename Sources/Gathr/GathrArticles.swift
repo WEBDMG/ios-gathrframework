@@ -44,7 +44,8 @@ open class GathrArticles : NSObject{
             .validate()
             .responseJSON { (response) -> Void in
                 self.articles = [Articles]()
-                let data = JSON(response.result.value!)
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 if let newsItems = data.array{
                     for newsData in newsItems {
                         let newsDict = newsData.dictionaryObject! as NSDictionary
