@@ -33,6 +33,7 @@
 		63D4FB9523BEE4C8009C032B /* GathrAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8323BEE4C8009C032B /* GathrAudio.swift */; };
 		63D4FB9623BEE4C8009C032B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FB8423BEE4C8009C032B /* Item.swift */; };
 		63D4FBA423C00CF8009C032B /* GathrNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4FBA323C00CF8009C032B /* GathrNotifications.swift */; };
+		63E35EE82E98906800142DE9 /* Config1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E35EE72E98906800142DE9 /* Config1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		63D4FB8323BEE4C8009C032B /* GathrAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GathrAudio.swift; sourceTree = "<group>"; };
 		63D4FB8423BEE4C8009C032B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		63D4FBA323C00CF8009C032B /* GathrNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrNotifications.swift; sourceTree = "<group>"; };
+		63E35EE72E98906800142DE9 /* Config1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config1.swift; sourceTree = "<group>"; };
 		C203610B1E38638F000FF773 /* Gathr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gathr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C203610E1E38638F000FF773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C214FCB52107DDF400D97DA0 /* Gathr.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gathr.podspec; sourceTree = SOURCE_ROOT; };
@@ -103,6 +105,7 @@
 				63D4FB7323BEE4C5009C032B /* Articles.swift */,
 				63D4FB8023BEE4C7009C032B /* Audio.swift */,
 				63D4FB7423BEE4C5009C032B /* Config.swift */,
+				63E35EE72E98906800142DE9 /* Config1.swift */,
 				63D4FB7E23BEE4C7009C032B /* Event.swift */,
 				63D4FB8423BEE4C8009C032B /* Item.swift */,
 				63D4FB7F23BEE4C7009C032B /* Photo.swift */,
@@ -261,6 +264,7 @@
 				63C1EC3E2E89ABE9009CEF4F /* GathrTexts.swift in Sources */,
 				63D4FB8A23BEE4C8009C032B /* GathrVideo.swift in Sources */,
 				63D4FB8E23BEE4C8009C032B /* GathrEvent.swift in Sources */,
+				63E35EE82E98906800142DE9 /* Config1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
