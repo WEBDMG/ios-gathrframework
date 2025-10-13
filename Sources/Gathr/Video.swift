@@ -26,6 +26,9 @@ open class Video{
     /// Details or description for video content.
     public var details:String = String()
     public var category:String = String()
+    public var director:String = String()
+    public var staring:String = String()
+    
     
     //MARK: - Init method
     /// Init to create Video object
@@ -54,6 +57,12 @@ open class Video{
         }
         if data["category"] != nil {
             self.category = String(data["category"] as! String)
+        }
+        if data["director"] != nil {
+            self.director = String(data["director"] as! String)
+        }
+        if data["staring"] != nil {
+            self.staring = String(data["staring"] as! String)
         }
         
     }
@@ -85,6 +94,12 @@ open class Video{
         if dictionary.value(forKey: "category") != nil {
             self.category = dictionary.value(forKey: "category") as! String
         }
+        if dictionary.value(forKey: "director") != nil {
+            self.director = dictionary.value(forKey: "director") as! String
+        }
+        if dictionary.value(forKey: "staring") != nil {
+            self.staring = dictionary.value(forKey: "staring") as! String
+        }
     }
     
     //MARK: - To method
@@ -97,7 +112,9 @@ open class Video{
             "image":self.image,
             "type":self.type,
             "details":self.details,
-            "category":self.category
+            "category":self.category,
+            "director":self.director,
+            "staring":self.staring
         ]
         return videoDictionary as NSDictionary
     }
