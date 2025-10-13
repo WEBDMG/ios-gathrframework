@@ -54,7 +54,7 @@ open class GathrVideo: NSObject{
         let apikey = "\(GathrConfiguration.sharedInstance.APIKEY()!)"
         let header:HTTPHeaders = ["X-API-KEY":apikey]
         var string = "\(GathrConfiguration.sharedInstance.BASE_URL()!)video/find/category/\(category)/token/\(GathrConfiguration.sharedInstance.PLAYMEAPPTOKEN()!)"
-        print(string)
+        //print(string)
         Alamofire.request(string,headers:header)
             .validate()
             .responseJSON { (response) -> Void in
