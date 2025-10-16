@@ -35,6 +35,7 @@ open class Audio {
     public var twitter:String?
     /// Social media link to app owners social media. Set by the user at upload.
     public var image:String?
+    public var producedBy:String?
     
     //MARK: - Init method
     
@@ -76,6 +77,9 @@ open class Audio {
         }
         if data["twitter"] != nil{
             self.twitter = String(data["twitter"] as! String)
+        }
+        if data["producedBy"] != nil{
+            self.producedBy = String(data["producedBy"] as! String)
         }
         
     }
@@ -119,6 +123,9 @@ open class Audio {
         if dictionary.value(forKey: "image") != nil{
             self.twitter = dictionary.value(forKey: "image") as! String
         }
+        if dictionary.value(forKey: "producedBy") != nil{
+            self.producedBy = dictionary.value(forKey: "producedBy") as! String
+        }
     }
     
     //MARK: - To Method
@@ -136,7 +143,8 @@ open class Audio {
             "artistName":self.artistName,
             "facebook":self.facebook,
             "twitter":self.twitter,
-            "image":self.image
+            "image":self.image,
+            "producedBy":self.producedBy
         ]
         return newsDictionary as NSDictionary
     }
