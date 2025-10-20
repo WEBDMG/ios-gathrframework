@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C2504B4A-6D98-4D76-A92A-6595377C0524",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:GathrFramework.xcodeproj",
+        "identifier" : "07A0AAF82EA6B4C0006ACA50",
+        "name" : "GathrTests"
+      }
+    }
+  ],
+  "version" : 1
+}

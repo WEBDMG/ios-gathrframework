@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A0AAFD2EA6B4C0006ACA50 /* Gathr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C203610B1E38638F000FF773 /* Gathr.framework */; platformFilter = ios; };
 		637D323F219B7A0300FF33E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 637D323E219B7A0300FF33E7 /* README.md */; };
 		639D97B0231DC8F100057F89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97AF231DC8F100057F89 /* Alamofire */; };
 		639D97B3231DC97900057F89 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 639D97B2231DC97900057F89 /* SwiftyJSON */; };
-		639D97E1231E056C00057F89 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 639D97E0231E056C00057F89 /* Tests */; };
 		63B44C5B23C3E48F00C05E86 /* GathrExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B44C5A23C3E48F00C05E86 /* GathrExtensions.swift */; };
 		63C1EC352E8821C4009CEF4F /* GathrCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1EC342E8821C4009CEF4F /* GathrCategory.swift */; };
 		63C1EC3E2E89ABE9009CEF4F /* GathrTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1EC3D2E89ABE9009CEF4F /* GathrTexts.swift */; };
@@ -36,11 +36,22 @@
 		63E35EE82E98906800142DE9 /* Config1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E35EE72E98906800142DE9 /* Config1.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		07A0AAFE2EA6B4C0006ACA50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20360C71E3862A3000FF773 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C203610A1E38638F000FF773;
+			remoteInfo = Gathr;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		07A0AAF92EA6B4C0006ACA50 /* GathrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GathrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A0AB052EA6BE29006ACA50 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		637D323E219B7A0300FF33E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		637FDD24224BD34B00316C08 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		637FDD25224BD34B00316C08 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		639D97E0231E056C00057F89 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		63B44C5A23C3E48F00C05E86 /* GathrExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrExtensions.swift; sourceTree = "<group>"; };
 		63C1EC342E8821C4009CEF4F /* GathrCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrCategory.swift; sourceTree = "<group>"; };
 		63C1EC3D2E89ABE9009CEF4F /* GathrTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathrTexts.swift; sourceTree = "<group>"; };
@@ -69,7 +80,19 @@
 		C214FCB52107DDF400D97DA0 /* Gathr.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gathr.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		07A0AAFA2EA6B4C0006ACA50 /* GathrTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = GathrTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		07A0AAF62EA6B4C0006ACA50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A0AAFD2EA6B4C0006ACA50 /* Gathr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C20361071E38638F000FF773 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,11 +155,12 @@
 		C20360C61E3862A3000FF773 = {
 			isa = PBXGroup;
 			children = (
+				07A0AB052EA6BE29006ACA50 /* TestPlan.xctestplan */,
 				639D97E2231E057A00057F89 /* Sources */,
-				639D97E0231E056C00057F89 /* Tests */,
 				C203610E1E38638F000FF773 /* Info.plist */,
 				C214FCB52107DDF400D97DA0 /* Gathr.podspec */,
 				637D323E219B7A0300FF33E7 /* README.md */,
+				07A0AAFA2EA6B4C0006ACA50 /* GathrTests */,
 				C20360D01E3862A3000FF773 /* Products */,
 				637D3233219B6C5B00FF33E7 /* Frameworks */,
 			);
@@ -146,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				C203610B1E38638F000FF773 /* Gathr.framework */,
+				07A0AAF92EA6B4C0006ACA50 /* GathrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +189,29 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		07A0AAF82EA6B4C0006ACA50 /* GathrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A0AB002EA6B4C0006ACA50 /* Build configuration list for PBXNativeTarget "GathrTests" */;
+			buildPhases = (
+				07A0AAF52EA6B4C0006ACA50 /* Sources */,
+				07A0AAF62EA6B4C0006ACA50 /* Frameworks */,
+				07A0AAF72EA6B4C0006ACA50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07A0AAFF2EA6B4C0006ACA50 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				07A0AAFA2EA6B4C0006ACA50 /* GathrTests */,
+			);
+			name = GathrTests;
+			packageProductDependencies = (
+			);
+			productName = GathrTests;
+			productReference = 07A0AAF92EA6B4C0006ACA50 /* GathrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C203610A1E38638F000FF773 /* Gathr */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C20361101E38638F000FF773 /* Build configuration list for PBXNativeTarget "Gathr" */;
@@ -192,10 +240,13 @@
 		C20360C71E3862A3000FF773 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = WEBDMG;
 				TargetAttributes = {
+					07A0AAF82EA6B4C0006ACA50 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
 					C203610A1E38638F000FF773 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 3PU85VZT37;
@@ -222,16 +273,23 @@
 			projectRoot = "";
 			targets = (
 				C203610A1E38638F000FF773 /* Gathr */,
+				07A0AAF82EA6B4C0006ACA50 /* GathrTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07A0AAF72EA6B4C0006ACA50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C20361091E38638F000FF773 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639D97E1231E056C00057F89 /* Tests in Resources */,
 				637D323F219B7A0300FF33E7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +297,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07A0AAF52EA6B4C0006ACA50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C20361061E38638F000FF773 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,7 +335,86 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		07A0AAFF2EA6B4C0006ACA50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = C203610A1E38638F000FF773 /* Gathr */;
+			targetProxy = 07A0AAFE2EA6B4C0006ACA50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		07A0AB012EA6B4C0006ACA50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PU85VZT37;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdmg.GathrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		07A0AB022EA6B4C0006ACA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PU85VZT37;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdmg.GathrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
 		C20360DF1E3862A4000FF773 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,6 +587,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07A0AB002EA6B4C0006ACA50 /* Build configuration list for PBXNativeTarget "GathrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A0AB012EA6B4C0006ACA50 /* Debug */,
+				07A0AB022EA6B4C0006ACA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C20360CA1E3862A3000FF773 /* Build configuration list for PBXProject "GathrFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

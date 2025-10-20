@@ -36,7 +36,8 @@ open class GathrConfig : NSObject{
         Alamofire.request(url, headers: header)
             .validate()
             .responseJSON { response in
-                let data = response.result.value as! NSDictionary
+                guard let response = response.result.value else { return }
+                let data = JSON(response)
                 self.config = Config(response: data)!
                 GathrNotifications().postNotification(name: "GathrConfigLoaded")
                 completion(self.config)
