@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 /// Creates Gathr Config object
 open class GathrConfig : NSObject{
@@ -38,7 +39,7 @@ open class GathrConfig : NSObject{
             .responseJSON { response in
                 guard let response = response.result.value else { return }
                 let data = JSON(response)
-                self.config = Config(response: data)!
+                self.config = Config(response: data.rawValue as! NSDictionary)!
                 GathrNotifications().postNotification(name: "GathrConfigLoaded")
                 completion(self.config)
         }
