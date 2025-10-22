@@ -37,6 +37,24 @@ open class Audio {
     public var image:String?
     public var producedBy:String?
     public var episode:String?
+    
+    /// Episode number as an Int computed from the `episode` string.
+    /// Getting: Parses the `episode` string (after trimming whitespace) into an Int.
+    /// Setting: Updates the underlying `episode` string from the provided Int.
+    public var episodeInt: Int? {
+        get {
+            guard let ep = episode?.trimmingCharacters(in: .whitespacesAndNewlines), !ep.isEmpty else { return nil }
+            return Int(ep)
+        }
+        set {
+            if let value = newValue {
+                episode = String(value)
+            } else {
+                episode = nil
+            }
+        }
+    }
+    
     //MARK: - Init method
     
     /// Init method
@@ -156,3 +174,4 @@ open class Audio {
         return newsDictionary as NSDictionary
     }
 }
+
